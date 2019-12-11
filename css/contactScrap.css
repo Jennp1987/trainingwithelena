@@ -1,0 +1,1250 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    width: 100%;
+    font-size: 1em;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+#contactWrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "logo logo nav nav nav nav nav nav nav nav buttons buttons"
+        "header header header header header header header header header header header header"
+        ". . form form form form . mySchedule mySchedule mySchedule . ."
+        ". . form form form form . mySchedule mySchedule mySchedule . ."
+        ". . form form form form . mySchedule mySchedule mySchedule . ."
+        ". . form form form form . mySchedule mySchedule mySchedule . ."
+        ". . form form form form . test test test . ."
+        ". . form form form form . contactInfo contactInfo contactInfo . ."
+        ". . form form form form . contactInfo contactInfo contactInfo . ."
+        ". . form form form form . contactInfo contactInfo contactInfo . ."
+        ". . form form form form . contactInfo contactInfo contactInfo . ."
+        ". FAQ FAQ FAQ FAQ FAQ FAQ FAQ FAQ FAQ FAQ ."
+        "blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+
+
+#formGrid {
+    display: grid;
+ 
+    grid-template-areas:
+        "note note note note note note"
+        ". . . . . ."
+        ". label1 input1 input1 input1 ."
+        ". label2 input2 input2 input2 ."
+        ". label3 input3 input3 input3 ."
+        ". label4 input4 input4 input4 ."
+        ". label5 input5 input5 input5 ."
+        ". label6 input6 input6 input6 ."
+        ". label7 input7 input7 input7 ."
+        ". label8 input8 input8 input8 ."
+        ". label9 input9 input9 input9 ."
+        ". submitButton . . . .";
+}
+
+
+
+.logo {
+    grid-area: logo;
+    margin-top: 5px;
+    width: auto;
+    text-align: center;
+    grid-area: logo;
+    padding: 0;
+}
+
+
+
+.nav {
+    grid-area: nav;
+    text-align: center;
+
+}
+
+nav ul {
+    border-radius: .5em;
+    border: 2px solid #009fff;
+    list-style-type: none;
+    margin: 10px;
+    padding-top: 0;
+    display: grid;
+    height: 50px;
+    grid-template: auto / repeat(5, 1fr);
+    grid-gap: px;
+    align-content: center;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    color: #009fff;
+}
+
+
+
+.button {
+    grid-area: buttons;
+    padding-top: 30px;
+    margin-top: -25px;
+    margin-right: 20px;
+}
+
+.navbuttons {
+    margin-top: 10px;
+    display: grid;
+    height: auto;
+    grid-template: auto / repeat(2, 1fr);
+}
+
+#button {
+    background-color: #009fff;
+    color: #ffffff;
+    border: 2px solid #e7e7e7;
+    border-radius: .5em;
+    padding: .5em;
+    font-size: 1.1em;
+}
+
+#button a {
+    text-decoration: none;
+}
+
+#button1 a {
+    text-decoration: none;
+}
+
+#button1,
+#button {
+    width: 100px;
+}
+
+input[type="button"],
+#button1 {
+    background-color: #ffffff;
+    color: black;
+    border: 2px solid lightgrey;
+    border-radius: .5em;
+    padding: .5em;
+    font-size: 1.1em;
+    margin-bottom: ;
+}
+
+input[type="button"]:hover {
+    border-color: #0AB1D0;
+    border-width: thin;
+    box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* End Buttons */
+
+header {
+    grid-area: header;
+    background-color: #009fff;
+    border-top: 7px solid #37c0da;
+    border-bottom: 7px solid #37c0da;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+h1#contactMe {
+    font-family: "Open Sans";
+    font-size: 4.3em;
+    color: white;
+}
+
+form {
+    grid-area: form;
+    
+}
+
+#myschedule {
+    grid-area: mySchedule;
+    width: 26.25rem;
+    height: 26.56rem;
+  
+}
+
+#test {
+    grid-area: test;
+}
+
+#contactInfo {
+    grid-area: contactInfo;
+    width: 420px;
+    height: 270px;
+}
+
+#myschedule,
+#test,
+#contactInfo {
+    margin: 0 auto;
+}
+
+
+#FAQ {
+    grid-area: FAQ;
+    margin-top: 2em;
+}
+
+#FAQ p {
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+
+.blueborder {
+    grid-area: blueBorder;
+    background-color: #009fff;
+    height: 4em;
+}    
+
+
+.footer {
+    grid-area: footer;
+    height: 8em;
+    background-color: black;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: "Open Sans";
+    margin: 25px 0 0 0;
+    margin-right: 18px;
+}
+
+
+.social-media {
+    margin: 0 auto;
+    width: 250px;
+}
+
+.social-media div {
+    float: left;
+    margin-left: 5px;
+    margin-right: 1px;
+}
+
+.social-media a {
+    display: block;
+    width: 50px;
+    height: 47px;
+    text-indent: -9999px;
+}
+
+.social-media div.one {
+    background: url('../images/socialmediaiconscropped.png') 0 0;
+}
+
+.social-media div.two {
+    background: url('../images/socialmediaiconscropped.png') -48px 0;
+}
+
+.social-media div.three {
+    background: url('../images/socialmediaiconscropped.png') -98px 0;
+}
+
+.social-media div.four {
+    background: url('../images/socialmediaiconscropped.png')-148px 0;
+}
+
+#note {
+    grid-area: note;
+    margin-bottom: 1em;
+    margin-top: .5em;
+    font-size: 1.2em;
+}
+
+.label1 {
+    grid-area: label1;
+}
+
+.input1 {
+    grid-area: input1;
+}
+
+.label2 {
+    grid-area: label2;
+}
+
+.input2 {
+    grid-area: input2;
+}
+
+.label3 {
+    grid-area: label3;
+}
+
+.input3 {
+    grid-area: input3;
+}
+
+.label4 {
+    grid-area: label4;
+}
+
+.input4 {
+    grid-area: input4;
+}
+
+.label5 {
+    grid-area: label5;
+}
+
+.input5 {
+    grid-area: input5;
+}
+
+.label6 {
+    grid-area: label6;
+}
+
+.input6 {
+    grid-area: input6;
+}
+
+.label7 {
+    grid-area: label7;
+}
+
+.input7 {
+    grid-area: input7;
+}
+
+.label8 {
+    grid-area: label8;
+}
+
+.input8 {
+    grid-area: input8;
+}
+
+.label9 {
+    grid-area: label9;
+}
+
+.input9 {
+    grid-area: input9;
+}
+
+.submitButton {
+    grid-area: submitButton;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+.big-container {
+    margin-bottom: 1.3em;
+}
+
+#imageMap {
+    grid-area: imageMap;
+}
+
+.mapouter {
+    height: 100%;
+    width: 100%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+input[type="email"],
+input[type="text"],
+input[type="tel"],
+textarea,
+select {
+    width: auto;
+    width: 18em;
+    height: 2.4em;
+    padding: .4em .6em;
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: .25em;
+    box-shadow: none;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+}
+
+textarea {
+    min-height: 4em;
+    padding-top: .4em;
+    padding-bottom: .4em;
+}
+
+.label1 > label,
+.label2 > label,
+.label3 > label,
+.label4 > label,
+.label5 > label > legend,
+.label6 > label > legend,
+.label7 > label,
+.label8 > label,
+.label9 > label {
+    width: 19em;
+    height: 2em;
+    font-weight: 600;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline;
+    margin: .5em;
+}
+
+input:required {
+    border: 1px solid #0AB1D0;
+}
+
+input[type="text"]:valid,
+input[type="tel"]:valid,
+input[type="email"]:valid {
+    border-color: rgb(0, 128, 0);
+}
+
+input.error {
+    border-color: red;
+}
+
+input::placeholder {
+    color: lightgray;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+#customFitnessPackages {
+    margin-bottom: 2em;
+}
+
+#questions {
+    font-family: "Open Sans";
+    font-size: 2em;
+}
+
+#advanced {
+    margin-bottom: 1.3em;
+
+}
+
+
+h3 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.3em
+}
+
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 26rem;
+    border-radius: 0.5rem;
+
+}
+
+.close-button {
+    width: 3rem;
+    line-height: 2rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+
+.close-button:hover {
+    background-color: darkgray;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.trigger {}
+
+.trigger:hover {
+    box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.7);
+}
+
+#contactInfo,
+section#myschedule,
+.gmap_canvas,
+button#trigger,
+.trigger:hover,
+#test {
+    margin: 0 auto;
+}
+
+
+.trigger,
+.trigger:hover {
+    margin-bottom: 1.5em;
+    border-radius: .5em;
+    border-color: #0AB1D0;
+    border-width: thick;
+    font-size: 1.6em;
+}
+
+hr {
+    margin: .5em 0;
+}
+
+.popupInput {
+    width: 23em !important;
+}
+
+
+@media screen and (min-width:1241px) and (max-width:1560px) {
+    #contactWrapper {
+        display: grid;
+        grid-template-columns: 7% 39% 7% 7% 33% 7%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            ". logo . . buttons ."
+            "nav nav nav nav nav nav"
+            "header header header header header header"
+            ". form . . mySchedule ."
+            ". form . . mySchedule ."
+            ". form . . mySchedule ."
+            ". form . . mySchedule ."
+            ". form . . test ."
+            ". form . . contactInfo ."
+            ". form . . contactInfo ."
+            ". form . . contactInfo ."
+            ". form . . contactInfo ."
+            "FAQ FAQ FAQ FAQ FAQ FAQ"
+            "blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder"
+            "footer footer footer footer footer footer";
+    }
+
+    #fieldset {
+        display: grid;
+        grid-template-columns: (2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset";
+    }
+
+    #formGrid {
+        display: grid;
+        grid-template-columns: (2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "note note"
+            ". ."
+            "label1 input1"
+            "label2 input2"
+            "label3 input3"
+            "label4 input4"
+            "label5 input5"
+            "label6 input6"
+            "label7 input7"
+            "label8 input8"
+            "label9 input9"
+            "submitButton .";
+    }
+
+    .label1 > label,
+    .label2 > label,
+    .label3 > label,
+    .label4 > label,
+    .label5 > label > legend,
+    .label6 > label > legend,
+    .label7 > label,
+    .label8 > label,
+    .label9 > label {
+        width: 17em;
+    }
+
+    input[type="email"],
+    input[type="text"],
+    input[type="tel"],
+    textarea,
+    select {
+        width: 17em;
+    }
+
+    #questions {
+        font-size: 1.7em;
+    }
+
+    #fieldset {
+        padding: 0.35em 1em 0.625em;
+    }
+
+    .trigger {
+        margin-bottom: 2em;
+        font-size: 2em;
+    }
+
+    .trigger,
+    .trigger:hover {
+        margin-bottom: 2em;
+        margin-left: 0em;
+        font-size: 1.8em;
+    }
+
+    #contactInfo {
+        margin-bottom: 18em;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+/* LARGE SCREEN MEDIA QUERY*/
+
+@media screen and (min-width:960px) and (max-width:1240px) {
+    #contactWrapper {
+        display: grid;
+        grid-template-columns: 5% 35% 6% 6% 43% 5%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            ". logo . . buttons ."
+            "nav nav nav nav nav nav"
+            "header header header header header header"
+            ". form . . mySchedule ."
+            ". form . . mySchedule ."
+            ". form . . mySchedule ."
+            ". form . . mySchedule ."
+            ". form . . test ."
+            ". form . . contactInfo ."
+            ". form . . contactInfo ."
+            ". form . . contactInfo ."
+            ". form . . contactInfo ."
+            "FAQ FAQ FAQ FAQ FAQ FAQ"
+            "blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder"
+            "footer footer footer footer footer footer";
+    }
+
+    #fieldset {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset";
+        margin-left: 0;
+    }
+
+    #formGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "note"
+            "."
+            "label1"
+            "input1"
+            "label2"
+            "input2"
+            "label3"
+            "input3"
+            "label4"
+            "input4"
+            "label5"
+            "input5"
+            "label6"
+            "input6"
+            "label7"
+            "input7"
+            "label8"
+            "input8"
+            "label9"
+            "input9"
+            "submitButton";
+    }
+
+    .trigger {
+        margin-bottom: 2.5em;
+        font-size: 2em;
+    }
+
+    .trigger,
+    .trigger:hover {
+        margin-bottom: 2.5em;
+        font-size: 1.6em;
+    }
+
+    #contactInfo {
+        margin-bottom: 18em;
+    }
+
+    #contactMe {
+        font-size: 3.9em !important;
+        padding: 0;
+    }
+
+    #questions {
+        font-size: 1.4em;
+    }
+
+ 
+    input[type="email"],
+    input[type="text"],
+    input[type="tel"],
+    textarea,
+    select {
+        width: 24em;
+    }
+
+    .label1 > label,
+    .label2 > label,
+    .label3 > label,
+    .label4 > label,
+    .label5 > label > legend,
+    .label6 > label > legend,
+    .label7 > label,
+    .label8 > label,
+    .label9 > label {
+        width: 15em;
+    }
+
+    input:required {
+        border: 1px solid #0AB1D0;
+    }
+
+    #fieldset {
+        padding: 0.35em 1.5em 0.625em;
+    }
+}
+
+@media screen and (min-width: 860px) and (max-width: 959px) {
+    #contactWrapper {
+        display: grid;
+        grid-template-columns:15% 70% 15%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            ". logo ."
+            "nav nav nav"
+            "header header header"
+            ". form ."
+            ". form ."
+            ". form ."
+            ". form ."
+            ". form ."
+            ". form ."
+            ". form ."
+            ". form ."
+            ". form ."
+            ". form ."
+            ". form ."
+            ". form ."
+            ". form ."
+            ". mySchedule ."
+            ". mySchedule ."
+            ". mySchedule ."
+            ". mySchedule ."
+            ". test ."
+            ". contactInfo ."
+            ". contactInfo ."
+            ". contactInfo ."
+            ". contactInfo ."
+            "FAQ FAQ FAQ"
+            "blueBorder blueBorder blueBorder"
+            "footer footer footer";
+    }
+
+  
+
+    #fieldset {
+        display: grid;
+        grid-template-columns: (1, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset;
+            padding: 
+
+    }
+
+    #formGrid {
+        display: grid;
+        grid-template-columns: (2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "note note"
+            ". ."
+            "label1 input1"
+            "label2 input2"
+            "label3 input3"
+            "label4 input4"
+            "label5 input5"
+            "label6 input6"
+            "label7 input7"
+            "label8 input8"
+            "label9 input9"
+            "submitButton .";
+    }
+
+   
+     .label1 > label,
+    .label2 > label,
+    .label3 > label,
+    .label4 > label,
+    .label5 > label > legend,
+    .label6 > label > legend,
+    .label7 > label,
+    .label8 > label,
+    .label9 > label {
+        width: 19em;
+
+    }
+    input[type="email"],
+    input[type="text"],
+    input[type="tel"],
+    textarea,
+    select {
+        width: 21em;
+  
+    }
+    .navbuttons {
+        display: none;
+    }
+    
+}
+
+
+
+
+/*TABLET PORTRAIT MEDIA QUERY*/
+
+@media screen and (min-width:768px) and (max-width:859px) {
+    #contactWrapper {
+        display: grid;
+        grid-template-columns:10% 80% 10%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            ". logo ."
+            "nav nav nav"
+            "header header header"
+            ". form ."
+            ". form ."
+            ". form ."
+            ". form ."
+            ". form ."
+            ". form ."
+            ". form ."
+            ". form ."
+            ". form ."
+            ". form ."
+            ". form ."
+            ". form ."
+            ". form ."
+            ". mySchedule ."
+            ". mySchedule ."
+            ". mySchedule ."
+            ". mySchedule ."
+            ". test ."
+            ". contactInfo ."
+            ". contactInfo ."
+            ". contactInfo ."
+            ". contactInfo ."
+            "FAQ FAQ FAQ"
+            "blueBorder blueBorder blueBorder"
+            "footer footer footer";
+    }
+
+    #fieldset {
+        display: grid;
+        grid-template-columns: (1, auto);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset";
+    }
+
+    #formGrid {
+        display: grid;
+        grid-template-columns: (2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "note note"
+            ". ."
+            "label1 input1"
+            "label2 input2"
+            "label3 input3"
+            "label4 input4"
+            "label5 input5"
+            "label6 input6"
+            "label7 input7"
+            "label8 input8"
+            "label9 input9"
+            "submitButton .";
+    }
+
+    .navbuttons {
+        display: none;
+    }
+    .label1 > label,
+    .label2 > label,
+    .label3 > label,
+    .label4 > label,
+    .label5 > label > legend,
+    .label6 > label > legend,
+    .label7 > label,
+    .label8 > label,
+    .label9 > label {
+        width: 16em;
+    }
+    input[type="email"],
+    input[type="text"],
+    input[type="tel"],
+    textarea,
+    select {
+        width: 21em;
+        
+        
+    }
+
+}
+
+END TABLET PORTRAIT MEDIA QUERY
+@media screen and (min-width:480px) and (max-width:767px) {
+    #contactWrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "logo logo"
+            "nav nav"
+            "header header"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "mySchedule mySchedule"
+            "mySchedule mySchedule"
+            "mySchedule mySchedule"
+            "mySchedule mySchedule"
+            "test test"
+            "contactInfo contactInfo"
+            "contactInfo contactInfo"
+            "contactInfo contactInfo"
+            "contactInfo contactInfo"
+            "blueBorder blueBorder"
+            "footer footer";
+    }
+
+    #fieldset {
+        display: grid;
+        grid-template-columns: (2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset";
+        grid-area: fieldset;
+        margin-left: 0;
+    }
+
+    #formGrid {
+        display: grid;
+        grid-template-columns: (2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "note note"
+            ". ."
+            "label1 label1"
+            "input1 input1"
+            "label2 label2"
+            "input2 input2"
+            "label3 label3"
+            "input3 input3"
+            "label4 label4"
+            "input4 input4"
+            "label5 label5"
+            "input5 input5"
+            "label6 label6"
+            "input6 input6"
+            "label7 label7"
+            "input7 input7"
+            "label8 label8"
+            "input8 input8"
+            "label9 label9"
+            "input9 input9"
+            "submitButton submitButton";
+    }
+
+    .button,
+    #FAQ {
+        display: none;
+    }
+
+    form {
+        margin: 0 .7em 3em .7em;
+    }
+
+    #test {
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    .trigger {
+        margin-left: 0;
+    }
+
+ 
+    #contactInfo {
+        margin-bottom: 3em;
+    }
+
+    
+}
+
+
+
+
+/*MOBILE PORTRAIT MEDIA QUERRY*/
+
+@media screen and (max-width:479px) {
+    #contactWrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "logo"
+            "nav"
+            "header"
+            "form"
+            "form"
+            "form"
+            "form"
+            "form"
+            "form"
+            "form"
+            "form"
+            "form"
+            "form"
+            "form"
+            "form"
+            "form"
+            "test"
+            "blueBorder"
+            "footer";
+    }
+
+    #fieldset {
+        display: grid;
+        grid-template-columns: (1, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset";
+        margin: 0;
+    }
+
+    #formGrid {
+        display: grid;
+        grid-template-columns: (1, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "note"
+            "."
+            "label1"
+            "input1"
+            "label2"
+            "input2"
+            "label3"
+            "input3"
+            "label4"
+            "input4"
+            "label5"
+            "input5"
+            "label6"
+            "input6"
+            "label7"
+            "input7"
+            "label8"
+            "input8"
+            "label9"
+            "input9"
+            "submitButton";
+    }
+
+    #myschedule {
+        width: 26rem;
+        height: 26.56rem;
+    }
+
+    form {
+        margin: 0 .4em 2em .4em;
+    }
+
+    .button,
+    .navbuttons,
+    #contactInfo,
+    section#myschedule,
+    .mapouter,
+    .mapouter,
+    .gmap_canvas,
+    #FAQ,
+    .small-container,
+    .big-container {
+        display: none;
+    }
+
+    form {
+        margin-bottom: 0 2em 4em 2em;
+    }
+
+    #test > button {
+        width: 13em;
+        margin-bottom: 2em;
+        margin-left: 2.3em;
+    }
+
+    h1#contactMe {
+        font-size: 2em;
+        padding: 0;
+    }
+}
+
+
+/*END MOBILE PORTRAIT MEDIA QUERRY*/
+
+/*Responsive iframe-container*/
+
+
+.responsive-iframe-container {
+    position: relative;
+    padding-bottom: 75% !important;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.responsive-iframe-container iframe,
+.vresponsive-iframe-container object,
+.vresponsive-iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+

@@ -1,0 +1,745 @@
+        body {
+                margin: 0;
+                font-family:sans-serif;
+                width: 100%;
+        }
+
+        *    {
+                padding: 0;
+                margin: 0;
+        }
+
+        @font-face {
+            font-family: "Mark My Words", "Open Sans";
+            src: url("css/fonts/Mark My Words.ttf") format("TrueType font");
+            src: url("css/fonts/Open Sans.ttf") format("TrueType font");
+        }
+
+/*Grid Styles*/
+
+    #homeWrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "logo nav nav nav nav buttons"
+            "header header header header header header"
+            "circles circles circles circles circles circles"
+            ". image image main main main "
+            "headline headline headline headline headline headline"
+            "testimonial1 testimonial1 testimonial1 testimonial1 testimonial1 testimonial1"
+            ". . testimonial2 testimonial2 . ."
+            "border border border border border border"
+            "footer1 footer1 footer2 footer2 footer3 footer3";
+            
+    }
+
+/*Logo*/
+
+    .logo {
+        grid-area: logo;
+        margin-top: 5px;
+        width: auto;
+        text-align: center;
+        grid-area: logo;
+        padding: 0;
+    }
+
+/*End Logo*/
+
+/*Nav */
+
+    .nav {
+        grid-area: nav;
+        text-align: center;
+
+    }
+
+    nav ul {
+        border-radius: .5em;
+        border: 2px solid #009fff;
+        list-style-type: none;
+        margin: 10px;
+        padding-top:0;
+        display: grid;
+        height: 50px;
+        grid-template: auto / repeat(5, 1fr);
+        grid-gap: px;
+        align-content: center;
+    }
+    nav ul li a {
+        color: black;
+        text-decoration: none;
+
+    }
+    nav a:hover{
+        color: #009fff;
+    }
+/*For dropdown select menu*/
+select {
+    background-color: #ffffff;
+    border-radius: .25em;
+    border: 1px solid #009fff;
+    box-sizing: border-box;
+    padding: 0.2em 0.4em;
+    font-size: 100%;
+}
+
+/********************** css begin after (nav a:hover)********************/
+    .lastservice{
+    color: black;
+    text-decoration:none; 
+}
+
+        #services{display: none;}
+
+        /* Hide the link that should open and close the topnav on small screens */
+        .topnav .icon {
+          display: none;
+        }
+
+        /* Dropdown container - needed to position the dropdown content */
+        .dropdown {
+          float: left;
+          overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+          font-size: 17px; /*change this*/
+          border: none;
+          outline: none;
+          color: black;
+          padding: 0;
+          background-color: inherit;
+          font-family: inherit;
+          margin-left: 0;
+        }
+
+        .dropdown-content {
+            
+          display: none;
+          position:absolute;
+          background-color:white;
+          width: 13%;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+        .dropdown-content a {
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: center;
+        }
+
+        .dropdown:hover .dropdown-content {
+            z-index: 8;
+          display: block;
+        }
+/******************************END CSS******************************************/
+
+
+
+
+
+
+/* End Nav */
+
+/* Buttons */
+
+    .button {
+        margin-top: 1em;
+        grid-area: buttons;
+        margin-right: 20px;
+        /*padding-top: 30px;*/
+    }
+
+    .navbuttons {
+        display: grid;
+        height: auto;
+        grid-template: auto / repeat(2, 1fr);
+        /*align-content: center;*/
+    }
+    .navbuttons a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .button1 {
+        width: 100px;
+        background-color: #009fff;
+        color: #ffffff;
+        border: 2px solid #e7e7e7;
+        border-radius: .5em;
+        padding: .5em;
+        font-size: 1.1em;
+    }
+
+    #button2 {
+        width: 100px;
+        /*padding: 0px 100px 0px 200px;*/
+        background-color: #ffffff;
+        color: black;
+        border: 2px solid lightgrey;
+        border-radius: .5em;
+        padding: .5em;
+        font-size: 1.1em;
+        margin-bottom: ;
+
+    }
+    #button2 a {
+        color:black;
+    }
+
+    .testimonial2{
+        margin-top: -15px;
+        text-align: center;
+        grid-area: testimonial2;
+        margin-bottom: 15px;
+    }
+
+
+
+/* End Buttons */
+
+/*START HEADER*/
+
+    header {
+        grid-area: header;
+
+    }
+
+    .header {
+        grid-area: header;
+        height: auto;
+        background: url(../images/imgheader.png)no-repeat;
+        background-size: cover;
+
+    }
+
+    .maintext {
+        text-align: center;
+        margin-top: 12%;
+        border: none solid white;
+        font-size: 5.3em;
+        color: white;
+        text-shadow: 5px 5px black;
+    }
+
+    .headerbuttonn {
+        text-align: center;
+        margin-top: 4.5%;
+        margin-bottom: 6.5%;
+    }
+
+    .headerbutton{
+        text-align: center;
+        shape-margin: 10%;
+        background-color: #009fff;
+        color: #ffffff;
+        border: 2px solid #e7e7e7;
+        border-radius: .8em;
+        padding: .5em;
+        font-size: 1.2em;
+    }
+    .headerbutton a{
+        color: white;
+        text-decoration: none;
+    }
+
+/* END HEADER*/
+
+
+/*START OF CIRCLES*/
+
+    .circles {
+        grid-area: circles;
+        height: 13em;
+        margin-top: -30px;
+        text-align: center;
+    }
+
+    .circle2 {
+        display: inline-block;
+        height: 80px;
+        width: 155px;
+        padding-top: 60px;
+        line-height: 18px;
+        border-radius: 50%;
+        background-color: white;
+        border: 3px solid #009fff;
+        color: #009fff;
+        font-size: 1.2em;
+        margin: 0 0 0 -20px;
+        box-shadow: 10px 15px 30px rgba(0, 0, 0, .5);
+    }
+
+    .middle {
+        position: relative;
+        z-index: 2;
+    }
+
+    .right {
+        position: relative;
+        z-index: 1;
+    }
+
+/*END OF CIRCLES*/
+
+/* Middle Section Begin*/
+
+    .sectionImage {
+        grid-area: image;
+        margin-bottom: 2em;
+    }
+
+    .sectionText {
+        grid-area: main;
+    }
+
+    .elenapic {
+        grid-area: image;
+        height: 22em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        float: right;
+        /*margin-bottom: 50px;*/
+    }
+
+    .oldman {
+        grid-area: image;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 50%;
+        box-shadow: 10px 15px 30px rgba(0, 0, 0, .5);
+    }
+
+    .greyText {
+        font-family: 'Lato', sans-serif;
+        color: grey;
+        font-size: 3em;
+        font-weight: bold;
+    }
+
+    .eText {
+        font-family: sans-serif;
+        color: #0bb1d0;
+        font-size: 3.5em;
+        font-weight: bold;
+    }
+
+    .descText {
+        font-family: sans-serif;
+        color: grey;
+        font-size: 1.3em;
+        font-weight: normal;
+    }
+    .aboutme{
+        margin-top: 3.8em;
+    }
+/*End Middle Section*/
+
+/*Begin Headline*/
+
+    .headline {
+        grid-area: headline;
+        height: 6em;
+        /*background-image: url("../images/headlineimage1.png");
+        background-size: cover;*/
+        background-color: #009FFF;
+        border-bottom: 7px solid #0ab1d0;
+        border-top: 7px solid #0ab1d0;
+        width: 100%;
+
+    }
+
+    .headline p {
+        text-align: center;
+        font-size: 3.5em;
+        color: white;
+        /*padding:.1em;*/
+        margin-top: .3em;
+
+    }
+/*End Headline*/
+
+/*Begin Testimonials*/
+
+.testimonials {
+    /*margin: 0;
+            padding: 0;
+            display: grid;
+            height: auto;
+            grid-template: auto / repeat(3, 1fr);*/
+}
+
+.testimonials1 {
+    margin-top: 20px;
+    grid-area: testimonial1;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+
+.border {
+    grid-area: border;
+    background-color: #000;
+    height: 1em;
+}
+
+/* Footer */
+
+.footerLeft {
+    grid-area: footer1;
+    height: auto;  
+    background-color: black;
+    color: white;
+    font-size: .75em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.footerMiddle {
+    grid-area: footer3;
+    height: auto; 
+    background-color: black;
+    color: white;
+    font-size: .75em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.footerRight {
+    grid-area: footer2;
+    height: auto;  
+    background-color: black;
+    color: white;
+    font-size: .75em;
+    text-align: center;    
+    padding-bottom: 1em;
+}
+
+.social-media {
+    margin: 0 auto;
+    width: 250px;
+}
+
+.social-media div {
+    float: right;
+    margin-left: 5px;
+    margin-right: 1px;
+}
+
+.social-media a {
+    display: block;
+    width: 50px;
+    height: 47px;
+    text-indent: -9999px;
+}
+
+.social-media div.one {
+    grid-area: footer3;
+    background: url('../images/socialmediaiconscropped.png') 0 0;
+}
+
+.social-media div.two {
+    background: url('../images/socialmediaiconscropped.png') -48px 0;
+}
+
+.social-media div.three {
+    background: url('../images/socialmediaiconscropped.png') -98px 0;
+}
+
+.social-media div.four {
+    background: url('../images/socialmediaiconscropped.png')-148px 0;
+}
+/*End Footer*/
+
+
+/* MEDIA QUERIES */
+    @media screen and (Max-width: 959px){ 
+
+        #services{display: none;}
+        
+    }
+
+    /*TABLET PORTRAIT MEDIA QUERY*/
+    @media screen and (min-width:768px)and (max-width:959px){
+.headline p {
+        text-align: center;
+        font-size: 2.6em;
+        color: white;
+        /*padding:.1em;*/
+        margin-top:30px;;
+
+    }
+        #services{display: none;}
+        
+    #homeWrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "logo logo logo logo logo logo"
+            "nav nav nav nav nav nav "
+            "header header header header header header"
+            "circles circles circles circles circles circles"
+            "image image image main main main "
+            "headline headline headline headline headline headline"
+            "testimonial1 testimonial1 testimonial1 testimonial1 testimonial1 testimonial1"
+            ". . testimonial2 testimonial2 . ."
+            "border border border border border border"
+            "footer1 footer1 footer2 footer2 footer3 footer3";
+    }
+
+
+        .button {
+            display: none;
+        }
+    }
+/*END TABLET PORTRAIT MEDIA QUERY*/
+
+/*MOBILE LANDSCAPING MEDIA QUERY*/
+    @media screen and (min-width:480px) and (max-width:767px){
+
+          .dropdown-content {
+            
+          display: none;
+          position:absolute;
+          background-color:white;
+          width: 25%;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        #services, .footerMiddle{display: none;}
+        
+        .button {
+            display: none;
+            margin: 9px;
+        }
+
+        .header {
+        height: 14.4em;
+        background-size: 100%;
+        margin-top: 10px;    
+    }
+        .headerbutton{
+        border-radius: .4em;
+        padding: .3em;
+        font-size: .9em;
+    }
+
+        .maintext {
+        text-align: center;
+        margin-top: 8%;
+        border: none solid white;
+        font-size: 3.2em;
+        color: white;
+        text-shadow: 5px 5px black;
+        margin-bottom: 0px;
+    }
+        .headerbuttonn {
+        margin-top: 5%;
+        margin-bottom: 0%;
+    }
+
+        .circles {
+        margin-left: 0px;
+        grid-area: circles;
+        height: 8em;
+        margin-top: -3em;
+        text-align: center;
+
+    }
+
+    .circle2 {
+        display: inline-block;
+        height: 50px;
+        width: 80px;
+        padding-top: 30px;
+        line-height: 15px;
+        border-radius: 50%;
+        background-color: white;
+        border: 3px solid #009fff;
+        color: #009fff;
+        font-size: .7em;
+        margin: 0 0 0 -12px;
+        box-shadow: 10px 15px 30px rgba(0, 0, 0, .5);
+    }
+        hr{
+            display: none;
+        }
+
+        .elenapic{
+
+            margin-top:50px;
+        }
+        .sectionText{
+            font-size: .8em;
+            margin-right: 15px;
+            margin-bottom: 30px;
+        }
+
+        .headline p {
+        text-align: center;
+        font-size: 2em;
+        color: white;
+        /*padding:.1em;*/
+        margin-top:30px;;
+
+    }
+        .border{
+            height:
+        }
+
+          #homeWrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "logo logo logo logo logo logo"
+            "nav nav nav nav nav nav "
+            "header header header header header header"
+            "circles circles circles circles circles circles"
+            "image image image main main main "
+            "headline headline headline headline headline headline"
+            "testimonial1 testimonial1 testimonial1 testimonial1 testimonial1 testimonial1"
+            ". . testimonial2 testimonial2 . ."
+            "border border border border border border"
+            "footer2 footer2 footer2 footer2 footer2 footer2"
+            "footer1 footer1 footer1 footer1 footer1 footer1";
+    }
+
+   }
+/*END MOBILE LANDSCAPING MEDIA QUERY*/
+
+/*MOBILE PORTRAIT MEDIA QUERRY*/
+    @media screen and (max-width:479px){
+    
+    /*add to every media query*/
+        #services, .footerMiddle{display: none;}
+        
+        .button {
+            display: none;
+            margin: 9px;
+        }
+        nav {
+            margin: 10px;
+        }
+         #mm0{
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+        }
+
+        .header {
+        background-size: 100%;
+        height: 160px;
+        margin-top: 10px;    
+    }
+        .headerbutton{
+        border-radius: .4em;
+        padding: .3em;
+        font-size: .9em;
+    }
+
+        .maintext {
+        text-align: center;
+        margin-top: 8%;
+        border: none solid white;
+        font-size: 2.8em;
+        color: white;
+        text-shadow: 5px 5px black;
+        margin-bottom: 0px;
+    }
+        .headerbuttonn {
+        margin-top: 1%;
+        margin-bottom: 3%;
+    }
+
+        .circles {
+        margin-left: 0px;
+        grid-area: circles;
+        height: 6em;
+        margin-top: -12px;
+        text-align: center;
+
+
+    }
+        .circless{
+        margin-left: 20px;}
+        .circle2 {
+        display: inline-block;
+        height: 50px;
+        width: 90px;
+        padding-top: 20px;
+        line-height: 18px;
+        border-radius: 50%;
+        background-color: white;
+        border: 3px solid #009fff;
+        color: #009fff;
+        font-size: .7em;
+        margin: 0 0 0 -30px;
+        box-shadow: 10px 15px 30px rgba(0, 0, 0, .5);
+    }
+        hr{
+            display: none;
+        }
+
+       .oldman {
+        grid-area: image;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 50%;
+        box-shadow: 10px 15px 30px rgba(0, 0, 0, .5);
+    }
+        .elenapic{
+            margin-top:-50px;
+        }
+        .sectionText{
+            font-size: .5em;
+            margin-right: 15px;
+        }
+
+
+        .headline p {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 1.6em;
+        color: white;
+        /*padding:.1em;*/
+        margin-top:30px;;
+
+    }
+
+          #homeWrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "logo logo logo logo logo logo"
+            "nav nav nav nav nav nav "
+            "header header header header header header"
+            "circles circles circles circles circles circles"
+            "image image image main main main "
+            "headline headline headline headline headline headline"
+            "testimonial1 testimonial1 testimonial1 testimonial1 testimonial1 testimonial1"
+            ". . testimonial2 testimonial2 . ."
+            "border border border border border border"
+            "footer2 footer2 footer2 footer2 footer2 footer2"
+            "footer1 footer1 footer1 footer1 footer1 footer1";
+    }
+    }
+
+/*END MOBILE PORTRAIT MEDIA QUERRY*/
+
+
+
+
+

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <link rel="stylesheet" href="../css/jquery.beefup.css">
+    <link rel=stylesheet href="../css/contactstyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
+     <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/script.js"></script>
+    <!--<script src="../js/jquery.min.js"></script>-->
+    <script src="../js/jquery.beefup.min.js"></script>
+</head>
+
+<body>
+    <div id="contactWrapper">
+        <div id="navGrid">
+            <div class="logo">
+                <img src="/images/LargerLogoBLACK%20copy.png" alt="">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/Aboutme.html">About Me</a></li>
+                    <li id="services"><a href="/pages/services.html">Services</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn"><a class="lastservice" href="/pages/services.html">Services</a><i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="/pages/servicesAustism.html">Autism Specialist</a>
+                            <a href="/pages/servicesChildren.html">Fitness for Children</a>
+                            <a href="/pages/servicesSeniors.html">Senior Fitness</a>
+                            <a href="/pages/servicesMassage.html">Sports Massage</a>
+                            <a href="/pages/servicesCustomPlans.html">Custom Training</a>
+                        </div>
+                    </div>
+                    <li><a href="/pages/prices.html">Prices</a></li>
+                    <li><a href="/pages/contactus.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!--Buttons-->
+            <div class="button">
+                <div class="navbuttons">
+                    <button id="button">
+                        <a href="tel:+1-303-499-7111">Call Me</a></button>
+                    <button id="button1">
+                        <a href="mailto:russianpersonaltrainer.com?subject=&body=Please send me a copy of your new program!">Email Me</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <header>
+            <h1 id="contactMe">Contact Us About Your Free Consultation!</h1>
+        </header>
+        <!--Form-->
+        <form id="myform form" action="" method="post">
+            <fieldset id="fieldset">
+                <legend id="questions"><em>For General Questions and Inquires</em></legend>
+                <div class="formgrid">
+                    <p id="note"><em>Note: Fields with an asterisk are required.</em></p>
+                    <label for="name" class="label">Name</label>
+                    <input id="name" type="text" name="name" maxlength="30" required placeholder="First and Last Name">
+                    <span id="nameError">*</span>
+                    <label class="label">Phone Number:</label>
+                    <input id ="phone" type="tel" name="phonenumber" maxlength="20" required placeholder="777-777-7777">
+                    <span id="phoneError">*</span>
+                    <label class="label">Email:</label>
+                    <input id ="email" type="email" name="email" required placeholder="myemail@me.com">
+                    <span id="emailError">*</span>
+                    <p>Services of Interest:</p>
+                    <input type="checkbox" name="services" id="trainingForSeniors" value="trainingForSeniors">
+                    <label for="trainingForSeniors">Training for Seniors</label>
+                    <input type="checkbox" name="services" id="TrainingForChildren" value="TrainingForChildren">
+                    <label for="TrainingForChildren">Training For Children</label>
+                    <input type="checkbox" name="services" id="trainingChildrenAutism" value="trainingForAutisticChildren">
+                    <label for="trainingChildrenAutism">Training for Children with Autistism </label>
+                    <input type="checkbox" name="services" id="SportsAndTherapyMassage" value="SportsAndTherapyMassage">
+                    <label for="SportsAndTherapyMassage">Sports and Therapy Massage</label>
+                    <input type="checkbox" name="services" id="customFitnessPackages" value="customFitnessPackages">
+                    <label for="customFitnessPackages">Custom Fitness Packages</label>
+                    <p>Perfered Method of Contact:</p>
+                    <input type="radio" name="methodOfContact" value="phone" id="phone">
+                    <label for="phone">Phone</label>
+                    <input type="radio" name="methodOfContact" value="email" id="email">
+                    <label for="email">Email</label>
+                    <input id='text' type="radio" name="methodOfContact" value="text">
+                    <label for="text">Text</label>
+                    <label class="label" id="trainingEnvironment">Training Environment:</label>
+                    <select name="trainingEnvironment">
+                        <option value="indoors my location">Indoors - your location</option>
+                        <option value="Indoors my location">Indoors - my location</option>
+                        <option value="Outdoors only">Outdoors only</option>
+                        <option value="Indoors and outdoors">Indoors and outdoors</option>
+                    </select>
+                    <label class="label">How did you hear about us?</label>
+                    <select name="hearaboutus" multiple>
+                        <option value="Radio Ad">Radio Ad</option>
+                        <option value="Television Ad">Television Ad</option>
+                        <option value="Magazine Ad">Magazine Ad</option>
+                        <option value="Internet Search">Internet Search</option>
+                        <option value="Word of Mouth">Word of Mouth</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <label class="label" id="questionsComments">Questions/Comments?</label>
+                    <textarea id="textArea" name="questions"></textarea>
+                    <button type="submit" class="submitButton" id="submitButton">SUBMIT</button>
+                </div>
+            </fieldset>
+        </form>
+
+        <!--------------------------------------------------------->
+        <!--------------------------------------------------------->
+        <section id="myschedule">
+            <h2>My Schedule</h2>
+            <div class="responsive-iframe-container big-container">
+                <iframe src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23c0c0c0&amp;src=nak7m5420euo39elv1bd0u9u98%40group.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FLos_Angeles" style="border:solid 1px #777" width="100%" height="400" frameborder="0" scrolling="no">
+                </iframe>
+            </div>
+        </section>
+        <!--*************************START POP UP*************************************** -->
+        <section id="test">
+            <button class="trigger">Click Here to Schedule.</button>
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <!--*************************START LABELS*************************************** -->
+
+                    <p><strong>Schedule a workout with me!</strong></p>
+                    <hr>
+                    <p>Please let me know your name, phone number, preferred date, and time.</p>
+                    <hr>
+                    <label>Name:</label><br>
+                    <input type="text" name="name" maxlength="25" pattern="[a-zA-Z]*" required title="Use non-numeric characters only" required placeholder="First and Last Name"><br>
+                    <label>Phone Number:</label><br>
+                    <input type="tel" name="phonenumber" maxlength="20" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required title="Ex: 777-777-7777" placeholder="777-777-7777"><br>
+                    <label>Date:</label><br>
+                    <input type="text" name="date" maxlength="30" required placeholder="MM/DD/YYYY"><br>
+                    <label>Preferred Time:</label><br>
+                    <input type="text" name="time" maxlength="30" required placeholder="HH:mm am/pm"><br>
+                    <br>
+                    <div>
+                        <!--submitButton-->
+                        <input id="submitPopupButton" type="button" value="Submit Form" />
+                    </div>
+                    <!-- *********************** END LABELS************************************** -->
+                </div>
+            </div>
+        </section>
+
+        <!--*************************END POP UP*************************************** -->
+        <!--*************************END POP UP*************************************** -->
+        <section id="contactInfo">
+            <div class="mapouter">
+                <div class="mapouter">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="100%" height="245" id="gmap_canvas" src="https://maps.google.com/maps?q=San%20Diego%20Outdoor%20Personal%20Trainer%2015870%20Camino%20San%20Bernardo%2C%20San%20Diego%2C%20CA%2092127&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------------------------------------------------------->
+        <!--------------------------------------------------------->
+        <!--------------------------------------------------------->
+        <!--------------------------------------------------------->
+        <!--------------------------------------------------------->
+        <main id="FAQ">
+            <article id="FAQ" class="beefup example-selfclose">
+                <h3 class="beefup__head">
+                    FAQ
+                </h3>
+                <div class="beefup__body">
+                    <h4>Do I need to have equipment if I am going to be working with you in my home or outdoors?</h4><br>
+                    <p>No, nearly all of my in-home clients have little or no equipment at all and get amazing results. Unless you are into power-lifting, body building, or competitive sports you do not need lots of machines - all you need is to work the muscles. This is possible with body weight calisthenics, exercise bands, free weights, manual resistance, exercise balls, etc.</p><br>
+                    <h4>What will my custom fitness plan include?</h4><br>
+                    <p>I develop a customized strength, flexibility, cardio, and nutrition plan for you based on you, your goals, your time available to exercise, your current fitness level, etc.</p><br>
+                    <h4>How fast will I achieve my goals and see results?</h4><br>
+                    <p>The more frequently you meet with me the faster you will see results and achieve your goals. There are several reasons for this; working with me will provide consistency, accountability, motivation, and guidance. You will find you will have all of these things when you work with me as opposed to working on your own.
+                        It takes from 6 months to 8 months to see significant results in the body according to the National Academy of Sports Medicine (nasm.org). If you train at least twice a week with me, add one more training session by yourself weekly and eat healthy – you will notice a drop in weight and clothes size.</p><br>
+                    <h4>How much do you charge?</h4><br>
+                    <p>I sell packages or we can go from session to session pay rate. A package of 10 sessions – $40 per hour . Paying each time – $ 60 – one hour at your location, price depends on a travelling distance. Please call to discuss that.</p><br>
+                    <h4>May I train with a friend or a partner?</h4><br>
+                    <p>Yes. It is more fun and more affordable for both of you.</p><br>
+                    <h4>Working out this way is somewhat costly.Why should I work with you when I can workout by myself?</h4><br>
+                    <p>Consider the price you pay me an investment in your health, the most precious asset you have. Without good health, the quality of your life will be diminished and limited. Working out with my help ensures you will get high quality advice and results. You will like your body more, your self-esteem will increase, and you will start enjoying life more.</p><br>
+                    <h4>If I buy a package, will I receive credits for missed sessions?</h4><br>
+                    <p> Yes, if you give me enough advance notice. I require at least 1 full business day notice in advance to give credit. For example, if your session is on Monday, you would need to let me know by the previous Thursday that you could not make it. This will give me a full business day (Friday) to schedule another client into your time slot. Your missed session will be rescheduled.</p><br>
+                    <h4>I travel a lot. Can you still help me?</h4><br>
+                    <p>Certainly. I will create a practical plan for you to keep exercising while you are away based on the activities and location of your temporary location.</p><br>
+                    <h4>Why use a certified trainer?</h4><br>
+                    <p>Using a certified trainer assures you will get an educated professional knowledgeable about the proper way to exercise based on your unique needs. Would you seek out medical advice from someone who has not graduated from medical school? Of course not. Your body and health are too important to risk injury by consulting with someone who is untrained nor would you just try to treat yourself. Your optimum life will only happen with optimum health.
+                    </p><br>
+                    <h4>Why should I hire you?</h4><br>
+                    <p>Click this link to read all about my qualifications, credentials, licenses, training, and experience:
+                        <a href="./Aboutme.html">Russian Personal Trainer</a></p><br>
+                </div>
+            </article>
+        </main>
+        <!--Begin Section-->
+        <section class="blueborder">
+        </section>
+        <!--End Section-->
+        <!--Begin black border-->
+        <div class="border"></div>
+        <!--End black border-->
+        <!-- Footer-->
+        <div class="footerGrid">
+            <footer class="footerLeft">
+                <address id="address">1234 Anygood Road<br>
+                    San Diego, California 92127<br>
+                    (555)-555-5555
+                </address>
+            </footer>
+
+            <footer class="footerMiddle">
+                <p id="copy">Training with Elena<br>Copyright &copy; 2019<br>All Rights Reserved</p>
+            </footer>
+            <footer class="footerRight">
+                <div class="social-media">
+                    <div class="one"><a href="http://www.twitter.com">Russian Personal Trainer on Twitter</a></div>
+                    <div class="two"><a href="http://www.facebook.com">Russian Personal Trainer on Facebook</a></div>
+                    <div class="three"><a href="http://www.snapchat.com">Russian Personal Trainer on Snapchat</a></div>
+                    <div class="four"><a href="http://www.instagram.com">Russian Personal Trainer on Instagram</a></div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+    <!-- End Footer -->
+    <!--If this code is placed in JS file, the script is executed before the page loads. By placing the script at the bottom of the page, I avioded the problem of it not loading.-->
+    <!--JQUERY NAVIGATION-->
+    <script src="../js/jquery.mobilemenu.js"></script>
+    <script>
+        $(function() {
+            $("ul").mobileMenu();
+        });
+    </script>
+    <!--FOR DROPDOWN PAGE-->
+    <script>
+        function myFunction() {
+            "use strict";
+            var x = document.getElementById('myTopnav');
+            if (x.className === 'topnav') {
+                x.className += "responsive";
+            } else {
+                x.className = "topnav";
+            }
+
+        }
+    </script>
+    <script>
+        var modal = document.querySelector(".modal");
+        var trigger = document.querySelector(".trigger");
+        var closeButton = document.querySelector(".close-button");
+
+        function toggleModal() {
+            modal.classList.toggle("show-modal");
+        }
+
+        function windowOnClick(event) {
+            if (event.target === modal) {
+                toggleModal();
+            }
+        }
+        trigger.addEventListener("click", toggleModal);
+        closeButton.addEventListener("click", toggleModal);
+        window.addEventListener("click", windowOnClick);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel=stylesheet href="css/normalize.css">
+    <link rel=stylesheet href="css/mainstyles.css">
+    <title>Training with Elena</title>
+    <!--JQUERY NAVIGATION -->
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery.mobilemenu.js"></script>
+		<script>
+            $(function() {
+		    $("ul").mobileMenu();
+            });
+       </script>
+    <!--FOR DROPDOWN PAGE-->
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+             x.className += " responsive";
+            } else {
+            x.className = "topnav";}}
+            </script>
+
+        <!--END JQUERY NAVIGATION-->
+</head>
+
+<body>
+    <div id="homeWrapper">
+        <div class="logo">
+            <img src="images/LargerLogoBLACK%20copy.png" alt="">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/pages/Aboutme.html">About Me</a></li>
+                 <!--*********************start drop down*****************-->
+                 <li id="services"><a href="/pages/services.html">Services</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn"><a class="lastservice" href="/pages/services.html">Services</a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                    <div class="dropdown-content">
+                        <a href="pages/servicesAustism.html">Autism Specialist</a>
+                        <a href="pages/servicesChildren.html">Fitness for Children</a>
+                        <a href="pages/servicesSeniors.html">Senior Training</a>
+                        <a href="pages/servicesMassage.html">Sports Massage</a>
+                        <a href="pages/servicesCustomPlans.html">Custom Training</a>
+                    </div>
+                </div>
+                <!--*********************end drop down*****************-->
+
+                <li><a href="/pages/prices.html">Prices</a></li>
+                <li><a href="/pages/contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--Buttons-->
+        <div class="button">
+            <div class="navbuttons">
+                <a href="tel:+1-303-499-7111">
+                       <button class="button1" >
+                        <p>Call Me<p></button></a>
+                        <a href="mailto:russianpersonaltrainer.com?subject=&body=Please send me a copy of your new program!"><button id="button2">
+                        <p>Email Me</p></button></a>
+            </div>
+        </div>
+        <!-- End Buttons-->
+
+        <!--Start Header-->
+        <header class="header">
+            <h1 class="maintext">Are You Ready?</h1>
+            <div class="headerbuttonn">
+                <a href="/pages/contactus.html"><button class="headerbutton">
+                    <p>SIGN UP <br> NOW </p> </button></a>
+            </div>
+        </header>
+        <!--End Header-->
+
+        <!--START OF CIRCLES-->
+        <section class="circles">
+            <div class="circless">
+                <a href="/pages/servicesAustism.html"><p class=circle2><strong>AUTISM SPECIALIST</strong></p></a>
+                <a href="/pages/servicesChildren.html"><p class="circle2"><strong>FITNESS FOR CHILDREN</strong></p></a>
+                <a href="/pages/servicesSeniors.html"><p class="circle2 middle"><strong>SENIOR TRAINING</strong></p></a>
+                <a href="/pages/servicesMassage.html"><p class="circle2 right"><strong>SPORTS MASSAGE</strong></p></a>
+                <a href="/pages/servicesCustomPlans.html"><p class="circle2"><strong>CUSTOM TRAINING</strong></p></a>
+                <br>
+                <br>
+                <br>
+                <hr class="hr">
+            </div>
+        </section>
+        <!--END OF CIRCLES-->
+
+        <!-- Middle Section -->
+        <section class="sectionImage">
+            <div id="imageGrid">
+                <div class="elenapic"> <img class="oldman" src="/images/elenaaboutmepic.png"></div>
+            </div>
+        </section>
+        <section class="sectionText">
+            <div id="textGrid">
+                <div class="aboutme">
+                    <p><span class="greyText">HI I'M</span>
+                        <span class="eText">ELENA</span>
+                    </p>
+                    <p><span class="greyText">PERSONAL TRAINER</span></p>
+                    <p class="descText">San Diego personal trainer Elena, is nationally certified<br>
+                        as a strength and conditioning specialist (CSCS).<br>
+                        She has a Master degree in phsical education from Boston University.<br>
+                        She is certified to work with seniors (NASM, Functional aging institute.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Middle Section -->
+
+        <!-- Begin Headline -->
+        <section class="headline">
+            <p>What Customers Say About Me</p>
+        </section>
+        <!-- End Headline -->
+
+        <!-- Testimonials -->
+        <aside class="testimonials1">
+        <img src="images/LeftPicGroup.jpg">
+        <img src="images/MiddlePicGroup.jpg">
+        <img src="images/RightPicGroup.jpg">
+        </aside>
+        <div class="testimonial2">
+            <a href="/pages/Testimonials.html"><button class="button1">Read More</button></a>
+        </div>
+        
+        <!-- End Testimonials -->
+
+        <!-- Border -->
+        <div class="border"></div>
+        <!-- End Border -->
+
+        <!-- FOOTER -->        
+        <footer class="footerLeft">
+            <address id="address">1234 Anygood Road<br>
+            San Diego, California 92127<br>
+            (555)-555-5555
+            </address>
+        </footer>
+        <footer class="footerMiddle">
+            <p id="copy">Training with Elena<br>Copyright &copy; 2019<br>All Rights Reserved</p>
+        </footer>
+
+        <footer class="footerRight">
+            <div class="social-media">
+            <div class="one"><a href="http://www.twitter.com">Russian Personal Trainer on Twitter</a></div>
+            <div class="two"><a href="http://www.facebook.com">Russian Personal Trainer on Facebook</a></div>
+            <div class="three"><a href="http://www.snapchat.com">Russian Personal Trainer on Snapchat</a></div>
+            <div class="four"><a href="http://www.instagram.com">Russian Personal Trainer on Instagram</a></div>
+            </div>
+        </footer>
+<!-- END OF FOOTER -->
+
+    </div>
+</body>
+
+</html>

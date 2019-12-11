@@ -1,0 +1,453 @@
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            width: 100%;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        @font-face {
+            font-family: "Mark My Words", "Open Sans";
+            src: url("css/fonts/Mark My Words.ttf") format("TrueType font");
+            src: url("css/fonts/Open Sans.ttf") format("TrueType font");
+        }
+
+        /*Grid Styles*/
+
+        #homeWrapper {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas:
+                "logo nav nav nav nav buttons"
+                "header header header header header header"
+                "row1testi row1testi row1testi row1testi row1testi row1testi"
+                "row2testi row2testi row2testi row2testi row2testi row2testi"
+                "border border border border border border"
+                "footer1 footer1 footer2 footer2 footer3 footer3";
+        }
+
+        /*Logo*/
+
+        .logo {
+            grid-area: logo;
+            margin-top: 5px;
+            width: auto;
+            text-align: center;
+            grid-area: logo;
+            padding: 0;
+        }
+
+        /*End Logo*/
+
+        /*Nav */
+
+        .nav {
+            grid-area: nav;
+            text-align: center;
+
+        }
+
+        nav ul {
+            border-radius: .5em;
+            border: 2px solid #009fff;
+            list-style-type: none;
+            margin: 10px;
+            padding-top: 0;
+            display: grid;
+            height: 50px;
+            grid-template: auto / repeat(5, 1fr);
+            grid-gap: px;
+            align-content: center;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+
+        }
+
+        nav a:hover {
+            color: #009fff;
+        }
+
+
+        /* End Nav */
+
+        /* Buttons */
+
+        .button {
+            margin-top: 1em;
+            grid-area: buttons;
+            margin-right: 20px;
+            /*padding-top: 30px;*/
+        }
+
+        .navbuttons {
+            display: grid;
+            height: auto;
+            grid-template: auto / repeat(2, 1fr);
+            /*align-content: center;*/
+        }
+
+        .navbuttons a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .button1 {
+            width: 100px;
+            background-color: #009fff;
+            color: #ffffff;
+            border: 2px solid #e7e7e7;
+            border-radius: .5em;
+            padding: .5em;
+            font-size: 1.1em;
+        }
+
+        #button2 {
+            width: 100px;
+            /*padding: 0px 100px 0px 200px;*/
+            background-color: #ffffff;
+            color: black;
+            border: 2px solid lightgrey;
+            border-radius: .5em;
+            padding: .5em;
+            font-size: 1.1em;
+            margin-bottom: ;
+
+        }
+
+        #button2 a {
+            color: black;
+        }
+
+
+        /*START HEADER*/
+
+        header {
+            grid-area: header;
+
+        }
+
+        .header {
+            grid-area: header;
+            height: auto;
+            background: url(../images/testimonialsRealbackground.png)no-repeat;
+            background-size: cover;
+
+        }
+
+        .maintext {
+            height: 100px;
+            text-align: center;
+            margin-top: 9%;
+            border: none solid white;
+            font-size: 4.3em;
+            color: white;
+            text-shadow: 5px 5px black;
+        }
+
+        .dot {
+            color: #009fff;
+        }
+
+        .headerbuttonn {
+            height: 70px;
+            text-align: center;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        .headerbutton {
+            text-align: center;
+            shape-margin: 10%;
+            background-color: #009fff;
+            color: #ffffff;
+            border: 2px solid #e7e7e7;
+            border-radius: .8em;
+            padding: .5em;
+            font-size: 1.1em;
+        }
+
+        .headerbuttontext {
+            color: white;
+            text-decoration: none;
+            font-weight: 900;
+        }
+
+        /* END HEADER*/
+
+        /*START OF ROW 1 TESTIMONIALS*/
+
+        .row1testi {
+            margin-top: 1em;
+            grid-area: row1testi;
+            text-align: center;
+
+        }
+
+        /*STYLING OF THE INDIVIDUAL BOXES*/
+        .box {
+            border: 3px solid #009fff;
+            text-align: center;
+            width: 14em;
+            height: 19em;
+            padding-top: .8em;
+            padding: .5em;
+            border-radius: .5em;
+            box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.9);
+        }
+
+        .box img {
+            border: 2px solid #009fff;
+            border-radius: 8em;
+        }
+
+
+        .box {
+            display: inline-block;
+        }
+
+
+        /*END OF ROW 1 TESTIMONIALS*/
+
+        /*START OF ROW 2 TESTIMONIALS*/
+        .row2testi {
+            grid-area: row2testi;
+            text-align: center;
+            margin-top: .75em;
+            margin-bottom: 1em;
+        }
+
+        /*End OF ROW 2 TESTIMONIALS*/
+
+        .headline {
+            grid-area: headline;
+            height: 6em;
+            background-color: #009FFF;
+            border-bottom: 7px solid #0ab1d0;
+            border-top: 7px solid #0ab1d0;
+        }
+
+        .headline p {
+            text-align: center;
+            font-family: "Mark My Words";
+            font-size: 3.5em;
+            color: white;
+            margin-bottom: 1em;
+            margin-top: .5em;
+        }
+
+        /* Footer */
+
+/*        .footer {
+            grid-area: footer;
+            height: 8em;
+            background-color: black;
+        }*/
+.border {
+    grid-area: border;
+    background-color: #000;
+    height: 1em;
+}
+.footerLeft {
+    grid-area: footer1;
+    height: auto;  
+    background-color: black;
+    color: white;
+    font-size: .75em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+.footerRight {
+    grid-area: footer2;
+    height: auto;  
+    background-color: black;
+    color: white;
+    font-size: .75em ;
+    text-align: center;    
+    padding-bottom: 1em;
+}
+
+.footerMiddle {
+    grid-area: footer3;
+    height: auto; 
+    background-color: black;
+    color: white;
+    font-size: .75em !important;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+
+/*        .footer p {
+            color: white;
+            text-align: center;
+            font-size: 1.2em;
+            font-family: sans-serif;
+            margin: 25px 0 0 0;
+            margin-right: 18px;
+        }*/
+
+        .social-media {
+            margin: 0 auto;
+            width: 250px;
+        }
+
+        .social-media div {
+            float: left;
+            margin-left: 5px;
+            margin-right: 1px;
+        }
+
+        .social-media a {
+            display: block;
+            width: 50px;
+            height: 47px;
+            text-indent: -9999px;
+        }
+
+        .social-media div.one {
+            background: url('../images/socialmediaiconscropped.png') 0 0;
+        }
+
+        .social-media div.two {
+            background: url('../images/socialmediaiconscropped.png') -48px 0;
+        }
+
+        .social-media div.three {
+            background: url('../images/socialmediaiconscropped.png') -98px 0;
+        }
+
+        .social-media div.four {
+            background: url('../images/socialmediaiconscropped.png')-148px 0;
+        }
+
+        /*End Footer*/
+
+
+
+
+
+
+        /* MEDIA QUERIES */
+        @media screen and (Max-width: 959px) {}
+
+        /*TABLET PORTRAIT MEDIA QUERY*/
+        @media screen and (min-width:768px)and (max-width:959px) {}
+
+        /*END TABLET PORTRAIT MEDIA QUERY*/
+
+        /*MOBILE LANDSCAPING MEDIA QUERY*/
+        @media screen and (min-width:480px) and (max-width:767px) {
+
+            .box {
+                margin: 1em;
+                border: 3px solid #009fff;
+                text-align: center;
+                width: 14em;
+                height: 19em;
+                padding-top: .8em;
+                padding: .5em;
+                border-radius: .5em;
+                box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.9);
+            }
+
+            .row2testi {
+                display: none;
+            }
+
+            .headerbutton {
+                margin-top: 32px;
+                text-align: center;
+                shape-margin: 10%;
+                background-color: #009fff;
+                color: #ffffff;
+                border: 2px solid #e7e7e7;
+                border-radius: .8em;
+                padding: .3em;
+                font-size: 1em;
+            }
+
+            .button, .footerLeft, .footerMiddle {
+                display: none;
+            }
+
+            #homeWrapper {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: auto;
+                grid-template-areas:
+                    "logo logo logo logo logo logo"
+                    "nav nav nav nav nav nav"
+                    "buttons buttons buttons buttons buttons buttons "
+                    "header header header header header header"
+                    "row1testi row1testi row1testi row1testi row1testi row1testi"
+                    "row2testi row2testi row2testi row2testi row2testi row2testi"
+                    "border border border border border border"
+                    "footer2 footer2 footer2 footer2 footer2 footer2";
+            }
+
+
+        }
+
+        /*END MOBILE LANDSCAPING MEDIA QUERY*/
+
+        /*MOBILE PORTRAIT MEDIA QUERRY*/
+        @media screen and (max-width:479px) {
+
+            .box {
+                margin: 1em;
+                border: 3px solid #009fff;
+                text-align: center;
+                width: 14em;
+                height: 19em;
+                padding-top: .8em;
+                padding: .5em;
+                border-radius: .5em;
+                box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.9);
+            }
+
+            .headerbutton {
+                margin-top: 32px;
+                text-align: center;
+                shape-margin: 10%;
+                background-color: #009fff;
+                color: #ffffff;
+                border: 2px solid #e7e7e7;
+                border-radius: .8em;
+                padding: .3em;
+                font-size: 1em;
+            }
+
+           {
+                display: none;
+            }
+
+            .row2testi,.button, .footerLeft, .footerMiddle {
+                display: none;
+            }
+
+            #homeWrapper {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: auto;
+                grid-template-areas:
+                    "logo logo logo logo logo logo"
+                    "nav nav nav nav nav nav"
+                    "buttons buttons buttons buttons buttons buttons "
+                    "header header header header header header"
+                    "row1testi row1testi row1testi row1testi row1testi row1testi"
+                    "row2testi row2testi row2testi row2testi row2testi row2testi"
+                    "border border border border border border"
+                    "footer2 footer2 footer2 footer2 footer2 footer2";
+            }
+
+
+        }
+
+        /*END MOBILE PORTRAIT MEDIA QUERRY*/
