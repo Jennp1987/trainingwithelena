@@ -7,25 +7,6 @@
     <link rel=stylesheet href="css/normalize.css">
     <link rel=stylesheet href="css/mainstyles.css">
     <title>Training with Elena</title>
-    <!--JQUERY NAVIGATION -->
-		<script src="../js/jquery-3.3.1.min.js"></script>
-		<script src="../js/jquery.mobilemenu.js"></script>
-		<script>
-            $(function() {
-		    $("ul").mobileMenu();
-            });
-       </script>
-    <!--FOR DROPDOWN PAGE-->
-        <script>
-            function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-             x.className += " responsive";
-            } else {
-            x.className = "topnav";}}
-        </script>
-
-        <!--END JQUERY NAVIGATION-->
 </head>
 
 <body>
@@ -161,8 +142,25 @@
             </div>
         </footer>
 <!-- END OF FOOTER -->
-
     </div>
+     <!--JQUERY NAVIGATION -->
+		<script src="../js/jquery-3.3.1.min.js"></script>
+		<script src="../js/jquery.mobilemenu.js"></script>
+		<script>
+            $(function() {
+		    $("ul").mobileMenu();
+            });
+       </script>
+    <!--FOR DROPDOWN PAGE-->
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+             x.className += " responsive";
+            } else {
+            x.className = "topnav";}}
+		</script>
+        <!--END JQUERY NAVIGATION-->
 </body>
 
 </html>
