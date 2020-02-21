@@ -1,12 +1,11 @@
-
 * {
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 @font-face {
-    font-family: "Mark My Words", "Open Sans";
-    src: url("css/fonts/Open Sans.ttf") format("TrueType font");
+	font-family: "Mark My Words", "Open Sans";
+	src: url("css/fonts/Open Sans.ttf") format("TrueType font");
 }
 
 body,
@@ -17,117 +16,116 @@ option,
 button,
 label {
 
-    font-size: 100%;
+	font-size: 100%;
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
-    color: #000000;
-    background-color: #ffffff;
-    margin: 0;
-    width: 100%;
+	font-family: "Open Sans", sans-serif;
+	color: #000000;
+	background-color: #ffffff;
+	margin: 0;
+	width: 100%;
 
 }
 
 #navGrid {
-    grid-area: navGrid;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas:
-        "logo nav nav nav nav buttons";
+	grid-area: navGrid;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-areas:
+		"logo nav nav nav nav buttons";
 }
 
 .logo {
-    grid-area: logo;
-    margin-top: 5px;
-    margin-left: 10px;
-    width: auto;
-    text-align: center;
-    grid-area: logo;
-    padding: 0;
+	grid-area: logo;
+	margin-top: 5px;
+	margin-left: 10px;
+	width: auto;
+	text-align: center;
+	grid-area: logo;
+	padding: 0;
 }
 
 /*Nav */
 .nav {
-    grid-area: nav;
-    text-align: center;
+	grid-area: nav;
+	text-align: center;
 }
 
 nav ul {
-    border-radius: .5em;
-    border: 2px solid #009fff;
-    list-style-type: none;
-    margin: 10px;
-    display: grid;
-    height: 55px;
-    grid-template: auto / repeat(5, 1fr);
-    grid-gap: px;
-    align-content: center;
+	border-radius: .5em;
+	border: 2px solid #009fff;
+	list-style-type: none;
+	margin: 10px;
+	display: grid;
+	height: 55px;
+	grid-template: auto / repeat(5, 1fr);
+	grid-gap: px;
+	align-content: center;
 }
 
 nav ul li a {
-    color: black;
-    text-decoration: none;
+	color: black;
+	text-decoration: none;
 }
 
 nav a:hover {
-    color: #009fff;
+	color: #009fff;
 }
 
 /********************** css begin after (nav a:hover)********************/
 .lastservice {
-    color: black;
-    text-decoration: none;
+	color: black;
+	text-decoration: none;
 }
 
 #services {
-    display: none;
+	display: none;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
-    display: none;
+	display: none;
 }
 
 /* Dropdown container - needed to position the dropdown content */
 .dropdown {
-    float: left;
-    overflow: hidden;
+	float: left;
+	overflow: hidden;
 }
 
 .dropdown .dropbtn {
-    font-size: 17px;
-    border: none;
-    outline: none;
-    color: black;
-    padding: 0;
-    background-color: inherit;
-    font-family: inherit;
-    margin-left: 0;
+	font-size: 17px;
+	border: none;
+	outline: none;
+	color: black;
+	padding: 0;
+	background-color: inherit;
+	font-family: inherit;
+	margin-left: 0;
 }
 
 .dropdown-content {
-
-    display: none;
-    position: absolute;
-    background-color: white;
-    width: 13%;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+	display: none;
+	position: absolute;
+	background-color: white;
+	width: 13%;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
 }
 
 .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
 }
 
 .dropdown:hover .dropdown-content {
-    z-index: 8;
-    display: block;
+	z-index: 8;
+	display: block;
 }
 
 /******************************END CSS******************************************/
@@ -136,50 +134,50 @@ nav a:hover {
 
 /* Buttons */
 .button {
-    grid-area: buttons;
-    margin-top: 1em;
-    margin-right: 20px;
+	grid-area: buttons;
+	margin-top: 1em;
+	margin-right: 20px;
 }
 
 .navbuttons {
-    display: grid;
-    height: auto;
-    grid-template: auto / repeat(2, 1fr);
+	display: grid;
+	height: auto;
+	grid-template: auto / repeat(2, 1fr);
 }
 
 #button {
-    background-color: #009fff;
-    color: #ffffff;
-    border: 2px solid #e7e7e7;
-    border-radius: .5em;
-    padding: .5em;
-    font-size: 1.1em;
+	background-color: #009fff;
+	color: #ffffff;
+	border: 2px solid #e7e7e7;
+	border-radius: .5em;
+	padding: .5em;
+	font-size: 1.1em;
 }
 
 #button a,
 #button1 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 #button1,
 #button {
-    width: 100px;
+	width: 100px;
 }
 
 #button1 {
-    background-color: #ffffff;
-    color: black;
-    border: 2px solid lightgrey;
-    border-radius: .5em;
-    padding: .5em;
-    font-size: 1.1em;
+	background-color: #ffffff;
+	color: black;
+	border: 2px solid lightgrey;
+	border-radius: .5em;
+	padding: .5em;
+	font-size: 1.1em;
 
 }
 
 #button:hover,
 #button1:hover {
-    border-color: #0AB1D0;
-    border-width: thin;
+	border-color: #0AB1D0;
+	border-width: thin;
 
 }
 
@@ -188,28 +186,28 @@ nav a:hover {
 .submitButton:hover,
 .trigger:hover,
 #submitPopupButton:hover {
-    box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.5);
 
 }
 
 /* End Buttons */
 header {
-    grid-area: header;
-    background-color: #009fff;
-    text-align: center;
-    margin-bottom: 3em;
+	grid-area: header;
+	background-color: #009fff;
+	text-align: center;
+	margin-bottom: 3em;
 }
 
 h1#contactMe {
-    font-family: "Open Sans";
-    font-size: 3.8em;
-    color: white;
-    padding-bottom: ;
+	font-family: "Open Sans";
+	font-size: 3.8em;
+	color: white;
+	padding-bottom: ;
 }
 
 .label,
 h2 {
-    color: #404040;
+	color: #404040;
 }
 
 h2,
@@ -221,92 +219,92 @@ h2,
 #test > div > div > label:nth-child(10),
 #test > div > div > label:nth-child(14),
 #test > div > div > label:nth-child(18) {
-    font-weight: bold;
-    color: #404040;
+	font-weight: bold;
+	color: #404040;
 
 }
 
 h2 {
-    text-align: center;
+	text-align: center;
 }
 
 .blueborder {
-    grid-area: blueBorder;
-    background-color: #009fff;
-    height: 4em;
+	grid-area: blueBorder;
+	background-color: #009fff;
+	height: 4em;
 }
 
 .border {
-    grid-area: border;
-    background-color: #000;
-    height: 1em;
+	grid-area: border;
+	background-color: #000;
+	height: 1em;
 }
 
 /*Footer Begin*/
 .footerLeft {
-    grid-area: footer1;
-    height: auto;
-    background-color: black;
-    color: white;
-    font-size: .75em;
-    text-align: center;
-    padding-bottom: 1em;
+	grid-area: footer1;
+	height: auto;
+	background-color: black;
+	color: white;
+	font-size: .75em;
+	text-align: center;
+	padding-bottom: 1em;
 }
 
 .footerRight {
-    grid-area: footer2;
-    height: auto;
-    background-color: black;
-    color: white;
-    font-size: .75em;
-    text-align: center;
-    padding-bottom: 1em;
+	grid-area: footer2;
+	height: auto;
+	background-color: black;
+	color: white;
+	font-size: .75em;
+	text-align: center;
+	padding-bottom: 1em;
 }
 
 .footerMiddle {
-    grid-area: footer3;
-    height: auto;
-    background-color: black;
-    color: white;
-    font-size: .75em !important;
-    text-align: center;
-    padding-bottom: 1em;
+	grid-area: footer3;
+	height: auto;
+	background-color: black;
+	color: white;
+	font-size: .75em !important;
+	text-align: center;
+	padding-bottom: 1em;
 }
 
 /*Sprites*/
 .social-media {
-    margin: 0 auto;
-    width: 250px;
+	margin: 0 auto;
+	width: 250px;
 }
 
 .social-media div {
-    float: right;
-    margin-left: 5px;
-    margin-right: 1px;
+	float: right;
+	margin-left: 5px;
+	margin-right: 1px;
 }
 
 .social-media a {
-    display: block;
-    width: 50px;
-    height: 47px;
-    text-indent: -9999px;
+	display: block;
+	width: 50px;
+	height: 47px;
+	text-indent: -9999px;
 }
 
 .social-media div.one {
-    grid-area: footer3;
-    background: url('../images/socialmediaiconscropped.png') 0 0;
+	grid-area: footer3;
+	background: url('../images/socialmediaiconscropped.png') 0 0;
 }
 
 .social-media div.two {
-    background: url('../images/socialmediaiconscropped.png') -48px 0;
+	background: url('../images/socialmediaiconscropped.png') -48px 0;
 }
 
 .social-media div.three {
-    background: url('../images/socialmediaiconscropped.png') -98px 0;
+	background: url('../images/socialmediaiconscropped.png') -98px 0;
 }
 
 .social-media div.four {
-    background: url('../images/socialmediaiconscropped.png')-148px 0;
+	background: url('../images/socialmediaiconscropped.png')-148px 0;
 }
 
 /*End Footer*/
@@ -314,167 +312,168 @@ h2 {
 /* grid layout */
 
 @supports (display: grid) {
-    #contactWrapper {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas:
-            "navGrid navGrid navGrid navGrid navGrid navGrid navGrid navGrid navGrid navGrid navGrid navGrid"
-            "header header header header header header header header header header header header"
-            ". . form form form form . . test test . ."
-            ". . form form form form . mySchedule mySchedule mySchedule mySchedule ."
-            ". . form form form form . mySchedule mySchedule mySchedule mySchedule ."
-            ". . form form form form . mySchedule mySchedule mySchedule mySchedule ."
-            ". . form form form form . contactInfo contactInfo contactInfo contactInfo ."
-            ". . form form form form . contactInfo contactInfo contactInfo contactInfo ."
-            ". . form form form form . contactInfo contactInfo contactInfo contactInfo ."
-            "FAQ FAQ FAQ FAQ FAQ FAQ FAQ FAQ FAQ FAQ FAQ FAQ"
-            "blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder"
-            "border border border border border border border border border border border border"
-            "footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid";
-    }
+	#contactWrapper {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas:
+			"navGrid navGrid navGrid navGrid navGrid navGrid navGrid navGrid navGrid navGrid navGrid navGrid"
+			"header header header header header header header header header header header header"
+			". . form form form form . . test test . ."
+			". . form form form form . mySchedule mySchedule mySchedule mySchedule ."
+			". . form form form form . mySchedule mySchedule mySchedule mySchedule ."
+			". . form form form form . mySchedule mySchedule mySchedule mySchedule ."
+			". . form form form form . contactInfo contactInfo contactInfo contactInfo ."
+			". . form form form form . contactInfo contactInfo contactInfo contactInfo ."
+			". . form form form form . contactInfo contactInfo contactInfo contactInfo ."
+			"FAQ FAQ FAQ FAQ FAQ FAQ FAQ FAQ FAQ FAQ FAQ FAQ"
+			"blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder"
+			"border border border border border border border border border border border border"
+			"footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid";
+	}
 
-    .footerGrid {
-        display: grid;
-        grid-area: footerGrid;
-        grid-auto-columns: repeat(6, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas:
-            "footer1 footer1 footer2 footer2 footer3 footer3";
-    }
+	.footerGrid {
+		display: grid;
+		grid-area: footerGrid;
+		grid-auto-columns: repeat(6, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas:
+			"footer1 footer1 footer2 footer2 footer3 footer3";
+	}
 
-    /* STYLES FOR GENERAL QUESTIONS FORM*/
-    form {
-        grid-area: form;
-        border: 7px solid #009fff;
-        background-color: floralwhite;
-        padding-top: .4em;
-        border-radius: .5em;
-    }
+	/* STYLES FOR GENERAL QUESTIONS FORM*/
+	form {
+		grid-area: form;
+		border: 7px solid #009fff;
+		background-color: floralwhite;
+		padding-top: .4em;
+		border-radius: .5em;
+	}
 
-    fieldset {
-        max-width: 40em;
-        margin: 0 auto;
-        border: none;
-    }
+	fieldset {
+		max-width: 40em;
+		margin: 0 auto;
+		border: none;
+	}
 
-    legend {
-        font-size: 1.4em;
-        width: 100%;
-        font-weight: bold;
-        color: #404040;
-    }
+	legend {
+		font-size: 1.4em;
+		width: 100%;
+		font-weight: bold;
+		color: #404040;
+	}
 
-    .formgrid {
-        display: grid;
-        grid-template-columns: 2fr 1em 2fr .5em;
-        grid-gap: 1.5em 0.6em;
-        grid-auto-flow: dense;
-        align-items: center;
-    }
+	.formgrid {
+		display: grid;
+		grid-template-columns: 2fr 1em 2fr .5em;
+		grid-gap: 1.5em 0.6em;
+		grid-auto-flow: dense;
+		align-items: center;
+	}
 
-    #note {
-        grid-column: 1 / 5;
-        grid-area: "note";
-        justify-self: start;
-        margin: 0;
-    }
+	#note {
+		grid-column: 1 / 5;
+		grid-area: "note";
+		justify-self: start;
+		margin: 0;
+	}
 
-    p {
-        grid-column: 1 / 5;
-        max-width: 40em;
-        margin: 1em auto;
-        margin: 0;
-        justify-self: start;
-    }
+	p {
+		grid-column: 1 / 5;
+		max-width: 40em;
+		margin: 1em auto;
+		margin: 0;
+		justify-self: start;
+	}
 
-    input,
-    textarea,
-    select,
-    .submitButton {
-        grid-column: 2 / 4;
-        width: auto;
-        margin: 0;
-        box-sizing: border-box;
-        padding: 0.2em 0.4em;
-        margin: 0.2em 0;
+	input,
+	textarea,
+	select,
+	.submitButton {
+		grid-column: 2 / 4;
+		width: auto;
+		margin: 0;
+		box-sizing: border-box;
+		padding: 0.2em 0.4em;
+		margin: 0.2em 0;
 
-    }
+	}
 
-    #nameError,
-    #phoneError,
-    #emailError {
-        grid-column: 4 / 5;
-        grid-auto-flow: dense;
-        box-sizing: border-box;
-        color: #009fff;
-        margin-bottom: 0;
-    }
+	#nameError,
+	#phoneError,
+	#emailError {
+		grid-column: 4 / 5;
+		grid-auto-flow: dense;
+		box-sizing: border-box;
+		color: #009fff;
+		margin-bottom: 0;
+	}
 
-    .submitButton,
-    .trigger {
-        width: 9em;
-        padding: 0.2em 2em;
-        box-shadow: 0 2px 0 #bbb;
-        cursor: pointer;
-    }
+	.submitButton,
+	.trigger {
+		width: 9em;
+		padding: 0.2em 2em;
+		box-shadow: 0 2px 0 #bbb;
+		cursor: pointer;
+	}
 
-    input,
-    textarea,
-    select,
-    .submitButton,
-    #submitPopupButton {
-        background-color: #ffffff;
-        border-radius: .25em;
-        border: 1px solid #009fff;
+	input,
+	textarea,
+	select,
+	.submitButton,
+	#submitPopupButton {
+		background-color: #ffffff;
+		border-radius: .25em;
+		border: 1px solid #009fff;
 
-    }
+	}
 
-    label {
-        grid-column: 3/4;
-        box-sizing: border-box;
-        user-select: none;
-        cursor: pointer;
+	label {
+		grid-column: 3/4;
+		box-sizing: border-box;
+		user-select: none;
+		cursor: pointer;
 
-    }
+	}
 
-    .label {
-        grid-column: 1 / 2;
-        margin: 0;
-        font-weight: bold;
-    }
+	.label {
+		grid-column: 1 / 2;
+		margin: 0;
+		font-weight: bold;
+	}
 
-    label + input:focus,
-    label + textarea:focus,
-    label + select:focus{
-        color: #0ab1d0;
-    }
+	label + input:focus,
+	label + textarea:focus,
+	label + select:focus {
+		color: #0ab1d0;
+	}
 
-    input:checked + label {
-        font-weight: bold;
-    }
+	input:checked + label {
+		font-weight: bold;
+	}
 
-    input[type="checkbox"],
-    input[type="radio"] {
-        grid-column: 1 / 3;
-        justify-self: end;
-        margin: 0;
-    }
+	input[type="checkbox"],
+	input[type="radio"] {
+		grid-column: 1 / 3;
+		justify-self: end;
+		margin: 0;
+	}
 
-    label,
-    input[type="checkbox"] + label,
-    input[type="radio"] + label {
-        width: auto;
-        padding: 0;
-        margin: 0;
-    }
+	label,
+	input[type="checkbox"] + label,
+	input[type="radio"] + label {
+		width: auto;
+		padding: 0;
+		margin: 0;
+	}
 
-    textarea {
-        align-self: start;
+	textarea {
+		align-self: start;
 
-    }
+	}
 }
-    /* fallback 30%/70% float layout */
+
+/* fallback 30%/70% float layout */
 
 
 
@@ -500,7 +499,7 @@ label {
 
 
 
-    /* fallback 30%/70% float layout END */
+/* fallback 30%/70% float layout END */
 
 /*button,
 input[type="checkbox"],
@@ -516,514 +515,551 @@ input[type="radio"] + label {
     text-align: left;
 }*/
 /*End  Form Styles*/
-    #myschedule {
-        grid-area: mySchedule;
-        width: auto;
-        height: auto;
-        margin-bottom: 0em;
-    }
-
-    #test {
-        grid-area: test;
-        margin: 0 auto;
-    }
-
-    /*Modal Pop Styles*/
-    .modal {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        opacity: 0;
-        visibility: hidden;
-        transform: scale(1.1);
-        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-    }
-
-    .modal-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: white;
-        padding: 1rem 1.5rem;
-        width: 26rem;
-        border-radius: 0.5rem;
-    }
-
-    /*Popup form styles*/
-    #test > div > div > input[type=text]:nth-child(8),
-    #test > div > div > input[type=tel]:nth-child(12),
-    #test > div > div > input[type=text]:nth-child(16),
-    #test > div > div > input[type=text]:nth-child(20) {
-        width: 100%;
-        margin: .3em 0 .3em 0;
-    }
-
-    .close-button {
-        width: 3rem;
-        line-height: 2rem;
-        text-align: center;
-        cursor: pointer;
-        border-radius: 0.25rem;
-        background-color: lightgray;
-    }
-
-    .close-button:hover {
-        background-color: darkgray;
-    }
-
-    .show-modal {
-        opacity: 1;
-        visibility: visible;
-        transform: scale(1.0);
-        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-    }
-
-    .trigger,
-    .trigger:hover {
-        border-radius: .5em;
-        font-size: 1.4em;
-        margin-bottom: 2em;
-    }
-
-    .trigger,
-    .trigger:hover,
-    .submitButton,
-    .submitButton:hover,
-    #submitPopupButton,
-    #submitPopupButton:hover {
-        background-color: #009fff;
-        border: 9px solid #e7e7e7;
-        border-width: medium;
-        color: #ffffff;
-    }
-
-    /* Google Maps Styles */
-    #contactInfo {
-        grid-area: contactInfo;
-    }
-
-    .mapouter {
-        height: 100%;
-        width: 100%;
-    }
-
-    .gmap_canvas {
-        overflow: hidden;
-        background: none !important;
-        height: 100%;
-        width: 100%;
-    }
-
-    /*FAQ*/
-    #FAQ {
-        grid-area: FAQ;
-        margin-top: 2em;
-
-    }
-
-    #FAQ p {
-        font-size: 1.2em;
-        line-height: 1.2em;
-        max-width: 100%;
-    }
-
-    h3 {
-        text-align: center;
-        font-size: 1.5em;
-    }
-
-    h4,
-    #FAQ p {
-        font-family: "Open Sans";
-    }
-
-    h4 {
-        font-size: 1.5em
-    }
-
-
-    /*MEDIA QUERIES*/
-
-    /*DESKTOP MEDIA QUERY*/
-    @media screen and (min-width: 1024px) and (max-width: 1220px) {
-        #contactWrapper {
-            display: grid;
-            grid-template-columns: 5% 35% 6% 6% 43% 5%;
-            grid-template-rows: auto;
-            grid-template-areas:
-                "navGrid navGrid navGrid navGrid navGrid navGrid"
-                "header header header header header header"
-                ". form . . test ."
-                ". form . . mySchedule ."
-                ". form . . mySchedule ."
-                ". form . . mySchedule ."
-                ". form . . mySchedule ."
-                ". form . . contactInfo ."
-                ". form . . contactInfo ."
-                ". form . . contactInfo ."
-                ". form . . contactInfo ."
-                "FAQ FAQ FAQ FAQ FAQ FAQ"
-                "blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder"
-                "border border border border border border"
-                "footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid";
-        }
-
-        h1#contactMe {
-            font-size: 3.7em;
-        }
-
-        legend {
-            font-size: 1.2em;
-        }
-
-        #note {
-            font-size: .9em;
-        }
-
-        .label {
-            grid-column: 1 / 5;
-        }
-
-        input {
-            margin: 0 .2em 0 .2em;
-        }
-
-        input,
-        output,
-        textarea,
-        select,
-        .submitButton {
-            grid-column: 1 / 4;
-            width: auto;
-            margin: 0;
-
-        }
-
-        input[type="checkbox"],
-        input[type="radio"] {
-            grid-column: 1/ 3;
-            justify-self: end;
-            margin: 0;
-        }
-    }
-
-    @media screen and (min-width: 960px) and (max-width:1024px) {
-        #contactWrapper {
-            display: grid;
-            grid-template-columns: 5% 35% 6% 6% 43% 5%;
-            grid-template-rows: auto;
-            grid-template-areas:
-                "navGrid navGrid navGrid navGrid navGrid navGrid"
-                "header header header header header header"
-                ". form . . test ."
-                ". form . . mySchedule ."
-                ". form . . mySchedule ."
-                ". form . . mySchedule ."
-                ". form . . mySchedule ."
-                ". form . . contactInfo ."
-                ". form . . contactInfo ."
-                ". form . . contactInfo ."
-                ". form . . contactInfo ."
-                "FAQ FAQ FAQ FAQ FAQ FAQ"
-                "blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder"
-                "border border border border border border"
-                "footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid";
-        }
-
-        h1#contactMe {
-            font-size: 3.6em;
-        }
-
-        .formgrid {
-            display: grid;
-            grid-template-columns: 1fr 1em 3fr;
-            grid-gap: 1.5em 0.6em;
-            grid-auto-flow: dense;
-            align-items: center;
-        }
-
-        legend {
-            font-size: 1.1em;
-        }
-
-        #note {
-            font-size: .9em;
-        }
-
-        .label {
-            grid-column: 1 / 5;
-        }
-
-        input {
-            margin: 0 .2em 0 .2em;
-        }
-
-        input,
-        textarea,
-        select,
-        .submitButton {
-            grid-column: 1 / 4;
-            width: auto;
-            margin: 0;
-        }
-
-        input[type="checkbox"],
-        input[type="radio"] {
-            grid-column: 1/ 3;
-            justify-self: end;
-            margin: 0;
-        }
-
-    }
-
-    /*Tablet Portrait*/
-    @media screen and (min-width: 768px) and (max-width: 959px) {
-        #contactWrapper {
-            display: grid;
-            grid-template-columns: 15% 70% 15%;
-            grid-template-rows: auto;
-            grid-template-areas:
-                "navGrid navGrid navGrid"
-                "header header header"
-                ". test ."
-                ". form ."
-                ". form ."
-                ". form ."
-                ". form ."
-                ". form ."
-                ". form ."
-                ". form ."
-                ". form ."
-                ". form ."
-                ". form ."
-                ". form ."
-                ". form ."
-                ". form ."
-                ". mySchedule ."
-                ". mySchedule ."
-                ". mySchedule ."
-                ". mySchedule ."
-                ". mySchedule ."
-                ". contactInfo ."
-                ". contactInfo ."
-                ". contactInfo ."
-                ". contactInfo ."
-                "FAQ FAQ FAQ"
-                "blueBorder blueBorder blueBorder"
-                "border border border"
-                "footerGrid footerGrid footerGrid";
-        }
-
-        #navGrid {
-            grid-template-columns: repeat (6, 1fr);
-            grid-template-rows: auto;
-            grid-template-areas:
-                "logo logo logo logo logo logo"
-                "nav nav nav nav nav nav";
-        }
-
-        h1#contactMe {
-            font-size: 3.5em;
-        }
-
-        form,
-        .trigger,
-        #myschedule,
-        #contactInfo {
-            margin-bottom: 2em;
-        }
-
-        #test {
-            margin: 0 auto;
-        }
-
-        .button {
-            display: none;
-        }
-    }
-
-    /* MOBILE LANDSCAPE*/
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-        #contactWrapper {
-            display: grid;
-            grid-template-columns: 15% 70% 15%;
-            grid-template-rows: auto;
-            grid-template-areas:
-                "navGrid navGrid navGrid"
-                "header header header"
-                ". test ."
-                "form form form"
-                "form form form"
-                "form form form"
-                "form form form"
-                "form form form"
-                "form form form"
-                "form form form"
-                "form form form"
-                "form form form"
-                "form form form"
-                "form form form"
-                "form form form"
-                "form form form"
-                ". contactInfo ."
-                ". contactInfo ."
-                ". contactInfo ."
-                ". contactInfo ."
-                "FAQ FAQ FAQ"
-                "blueBorder blueBorder blueBorder"
-                "border border border"
-                "footerGrid footerGrid footerGrid";
-        }
-
-        #navGrid {
-            grid-template-columns: repeat (6, 1fr);
-            grid-template-rows: auto;
-            grid-template-areas:
-                "logo logo logo logo logo logo"
-                "nav nav nav nav nav nav";
-        }
-
-        h1#contactMe {
-            font-size: 3em;
-        }
-
-        fieldset {
-            font-size: 1.1em !important;
-        }
-
-        #note {
-            font-size: 1em !important;
-        }
-
-        form,
-        #contactInfo {
-            margin-bottom: 2em;
-        }
-
-        #test,
-        #myschedule,
-        .button,
-        .footerMiddle {
-            display: none;
-        }
-
-        .footerGrid {
-            display: grid;
-            grid-auto-columns: repeat(3, 1fr);
-            grid-template-rows: auto;
-            grid-template-areas:
-                "footer2 footer2 footer2"
-                "footer1 footer1 footer1";
-        }
-
-        #FAQ {
-            margin-top: 0;
-        }
-    }
-
-    /*MOBILE PORTRAIT*/
-    @media screen and (max-width: 479px) {
-        #contactWrapper {
-            display: grid;
-            grid-template-columns: 5% 90% 5%;
-            grid-template-rows: auto;
-            grid-template-areas:
-                "navGrid navGrid navGrid"
-                "header header header"
-                "form form form"
-                "form form form"
-                "form form form"
-                "form form form"
-                "form form form"
-                "form form form"
-                "form form form"
-                "form form form"
-                "form form form"
-                "form form form"
-                "form form form"
-                "form form form"
-                "form form form"
-                ". contactInfo ."
-                ". contactInfo ."
-                ". contactInfo ."
-                ". contactInfo ."
-                "blueBorder blueBorder blueBorder"
-                "border border border"
-                "footerGrid footerGrid footerGrid";
-        }
-
-        #navGrid {
-            grid-template-columns: repeat (6, 1fr);
-            grid-template-rows: auto;
-            grid-template-areas:
-                "logo logo logo logo logo logo"
-                "nav nav nav nav nav nav";
-        }
-
-        .formgrid {
-            display: grid;
-            grid-template-columns: 1fr 1em 3fr 1em;
-            grid-gap: 1.5em 0.6em;
-            grid-auto-flow: dense;
-            align-items: center;
-        }
-
-        .label {
-            grid-column: 1 / 5;
-        }
-
-        input {
-            margin: 0 .2em 0 .2em;
-        }
-
-        input,
-        output,
-        textarea,
-        select,
-        .submitButton {
-            grid-column: 1 / 4;
-            width: auto;
-            margin: 0;
-        }
-
-        input[type="checkbox"],
-        input[type="radio"] {
-            grid-column: 1/ 3;
-            justify-self: end;
-            margin: 0;
-        }
-
-        form,
-        .trigger,
-        #contactInfo {
-            margin-bottom: 2em;
-        }
-
-        header,
-        #test,
-        #myschedule,
-        .button,
-        #FAQ,
-        .footerMiddle {
-            display: none;
-        }
-
-        #mm0 {
-            margin-top: 1.5em;
-            margin-bottom: 1.5em;
-        }
-
-        .footerGrid {
-            display: grid;
-            grid-auto-columns: repeat(3, 1fr);
-            grid-template-rows: auto;
-            grid-template-areas:
-                "footer2 footer2 footer2"
-                "footer1 footer1 footer1";
-        }
-
-    }
+#myschedule {
+	grid-area: mySchedule;
+	width: auto;
+	height: auto;
+	margin-bottom: 0em;
+}
+
+#test {
+	grid-area: test;
+	margin: 0 auto;
+}
+
+/*Modal Pop Styles*/
+.modal {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	visibility: hidden;
+	transform: scale(1.1);
+	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	padding: 1rem 1.5rem;
+	width: 26rem;
+	border-radius: 0.5rem;
+}
+
+/*Popup form styles*/
+#test > div > div > input[type=text]:nth-child(8),
+#test > div > div > input[type=tel]:nth-child(12),
+#test > div > div > input[type=text]:nth-child(16),
+#test > div > div > input[type=text]:nth-child(20) {
+	width: 100%;
+	margin: .3em 0 .3em 0;
+}
+
+.close-button {
+	width: 3rem;
+	line-height: 2rem;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 0.25rem;
+	background-color: lightgray;
+}
+
+.close-button:hover {
+	background-color: darkgray;
+}
+
+.show-modal {
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1.0);
+	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.trigger,
+.trigger:hover {
+	border-radius: .5em;
+	font-size: 1.4em;
+	margin-bottom: 2em;
+}
+
+.trigger,
+.trigger:hover,
+.submitButton,
+.submitButton:hover,
+#submitPopupButton,
+#submitPopupButton:hover {
+	background-color: #009fff;
+	border: 9px solid #e7e7e7;
+	border-width: medium;
+	color: #ffffff;
+}
+
+/* Google Maps Styles */
+#contactInfo {
+	grid-area: contactInfo;
+}
+
+.mapouter {
+	height: 100%;
+	width: 100%;
+}
+
+.gmap_canvas {
+	overflow: hidden;
+	background: none !important;
+	height: 100%;
+	width: 100%;
+}
+
+/*FAQ*/
+#FAQ {
+	grid-area: FAQ;
+	margin-top: 2em;
+
+}
+
+#FAQ p {
+	font-size: 1.2em;
+	line-height: 1.2em;
+	max-width: 100%;
+}
+
+h3 {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+h4,
+#FAQ p {
+	font-family: "Open Sans";
+}
+
+h4 {
+	font-size: 1.5em
+}
+
+
+/*MEDIA QUERIES*/
+
+/*DESKTOP MEDIA QUERY*/
+@media screen and (min-width: 1024px) and (max-width: 1220px) {
+	#contactWrapper {
+		display: grid;
+		grid-template-columns: 5% 35% 6% 6% 43% 5%;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"navGrid navGrid navGrid navGrid navGrid navGrid"
+			"header header header header header header"
+			". form . . test ."
+			". form . . mySchedule ."
+			". form . . mySchedule ."
+			". form . . mySchedule ."
+			". form . . mySchedule ."
+			". form . . contactInfo ."
+			". form . . contactInfo ."
+			". form . . contactInfo ."
+			". form . . contactInfo ."
+			"FAQ FAQ FAQ FAQ FAQ FAQ"
+			"blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder"
+			"border border border border border border"
+			"footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid";
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: white;
+		width: 13%;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+	}
+
+	h1#contactMe {
+		font-size: 3.7em;
+	}
+
+	legend {
+		font-size: 1.2em;
+	}
+
+	#note {
+		font-size: .9em;
+	}
+
+	.label {
+		grid-column: 1 / 5;
+	}
+
+	input {
+		margin: 0 .2em 0 .2em;
+	}
+
+	input,
+	output,
+	textarea,
+	select,
+	.submitButton {
+		grid-column: 1 / 4;
+		width: auto;
+		margin: 0;
+
+	}
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		grid-column: 1/ 3;
+		justify-self: end;
+		margin: 0;
+	}
+}
+
+@media screen and (min-width: 960px) and (max-width:1024px) {
+	#contactWrapper {
+		display: grid;
+		grid-template-columns: 5% 35% 6% 6% 43% 5%;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"navGrid navGrid navGrid navGrid navGrid navGrid"
+			"header header header header header header"
+			". form . . test ."
+			". form . . mySchedule ."
+			". form . . mySchedule ."
+			". form . . mySchedule ."
+			". form . . mySchedule ."
+			". form . . contactInfo ."
+			". form . . contactInfo ."
+			". form . . contactInfo ."
+			". form . . contactInfo ."
+			"FAQ FAQ FAQ FAQ FAQ FAQ"
+			"blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder"
+			"border border border border border border"
+			"footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid";
+	}
+
+/*
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: white;
+		width: 25%;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+	}
+*/
+
+	h1#contactMe {
+		font-size: 3.6em;
+	}
+
+	.formgrid {
+		display: grid;
+		grid-template-columns: 1fr 1em 3fr;
+		grid-gap: 1.5em 0.6em;
+		grid-auto-flow: dense;
+		align-items: center;
+	}
+
+	legend {
+		font-size: 1.1em;
+	}
+
+	#note {
+		font-size: .9em;
+	}
+
+	.label {
+		grid-column: 1 / 5;
+	}
+
+	input {
+		margin: 0 .2em 0 .2em;
+	}
+
+	input,
+	textarea,
+	select,
+	.submitButton {
+		grid-column: 1 / 4;
+		width: auto;
+		margin: 0;
+	}
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		grid-column: 1/ 3;
+		justify-self: end;
+		margin: 0;
+	}
+
+}
+
+/*Tablet Portrait*/
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	#contactWrapper {
+		display: grid;
+		grid-template-columns: 15% 70% 15%;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"navGrid navGrid navGrid"
+			"header header header"
+			". test ."
+			". form ."
+			". form ."
+			". form ."
+			". form ."
+			". form ."
+			". form ."
+			". form ."
+			". form ."
+			". form ."
+			". form ."
+			". form ."
+			". form ."
+			". form ."
+			". mySchedule ."
+			". mySchedule ."
+			". mySchedule ."
+			". mySchedule ."
+			". mySchedule ."
+			". contactInfo ."
+			". contactInfo ."
+			". contactInfo ."
+			". contactInfo ."
+			"FAQ FAQ FAQ"
+			"blueBorder blueBorder blueBorder"
+			"border border border"
+			"footerGrid footerGrid footerGrid";
+	}
+
+	#navGrid {
+		grid-template-columns: repeat (6, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas:
+			"logo logo logo logo logo logo"
+			"nav nav nav nav nav nav";
+	}
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: white;
+		width: 22%;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+	}
+
+	h1#contactMe {
+		font-size: 3.5em;
+	}
+
+	form,
+	.trigger,
+	#myschedule,
+	#contactInfo {
+		margin-bottom: 2em;
+	}
+
+	#test {
+		margin: 0 auto;
+	}
+
+	.button {
+		display: none;
+	}
+}
+
+/* MOBILE LANDSCAPE*/
+@media screen and (min-width: 480px) and (max-width: 767px) {
+	#contactWrapper {
+		display: grid;
+		grid-template-columns: 15% 70% 15%;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"navGrid navGrid navGrid"
+			"header header header"
+			". test ."
+			"form form form"
+			"form form form"
+			"form form form"
+			"form form form"
+			"form form form"
+			"form form form"
+			"form form form"
+			"form form form"
+			"form form form"
+			"form form form"
+			"form form form"
+			"form form form"
+			"form form form"
+			". contactInfo ."
+			". contactInfo ."
+			". contactInfo ."
+			". contactInfo ."
+			"FAQ FAQ FAQ"
+			"blueBorder blueBorder blueBorder"
+			"border border border"
+			"footerGrid footerGrid footerGrid";
+	}
+
+	#navGrid {
+		grid-template-columns: repeat (6, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas:
+			"logo logo logo logo logo logo"
+			"nav nav nav nav nav nav";
+	}
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: white;
+		width: 22%;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+	}
+
+	h1#contactMe {
+		font-size: 3em;
+	}
+	
+
+	fieldset {
+		font-size: 1.1em !important;
+	}
+
+	#note {
+		font-size: 1em !important;
+	}
+
+	form,
+	#contactInfo {
+		margin-bottom: 2em;
+	}
+
+	#test,
+	#myschedule,
+	.button,
+	.footerMiddle {
+		display: none;
+	}
+
+	.footerGrid {
+		display: grid;
+		grid-auto-columns: repeat(3, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas:
+			"footer2 footer2 footer2"
+			"footer1 footer1 footer1";
+	}
+
+	#FAQ {
+		margin-top: 0;
+	}
+}
+
+/*MOBILE PORTRAIT*/
+@media screen and (max-width: 479px) {
+	#contactWrapper {
+		display: grid;
+		grid-template-columns: 5% 90% 5%;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"navGrid navGrid navGrid"
+			"header header header"
+			"form form form"
+			"form form form"
+			"form form form"
+			"form form form"
+			"form form form"
+			"form form form"
+			"form form form"
+			"form form form"
+			"form form form"
+			"form form form"
+			"form form form"
+			"form form form"
+			"form form form"
+			". contactInfo ."
+			". contactInfo ."
+			". contactInfo ."
+			". contactInfo ."
+			"blueBorder blueBorder blueBorder"
+			"border border border"
+			"footerGrid footerGrid footerGrid";
+	}
+
+	#navGrid {
+		grid-template-columns: repeat (6, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas:
+			"logo logo logo logo logo logo"
+			"nav nav nav nav nav nav";
+	}
+
+	.formgrid {
+		display: grid;
+		grid-template-columns: 1fr 1em 3fr 1em;
+		grid-gap: 1.5em 0.6em;
+		grid-auto-flow: dense;
+		align-items: center;
+	}
+
+	.label {
+		grid-column: 1 / 5;
+	}
+
+	input {
+		margin: 0 .2em 0 .2em;
+	}
+
+	input,
+	output,
+	textarea,
+	select,
+	.submitButton {
+		grid-column: 1 / 4;
+		width: auto;
+		margin: 0;
+	}
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		grid-column: 1/ 3;
+		justify-self: end;
+		margin: 0;
+	}
+
+	form,
+	.trigger,
+	#contactInfo {
+		margin-bottom: 2em;
+	}
+
+	header,
+	#test,
+	#myschedule,
+	.button,
+	#FAQ,
+	.footerMiddle {
+		display: none;
+	}
+
+	#mm0 {
+		margin-top: 1.5em;
+		margin-bottom: 1.5em;
+	}
+
+	.footerGrid {
+		display: grid;
+		grid-auto-columns: repeat(3, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas:
+			"footer2 footer2 footer2"
+			"footer1 footer1 footer1";
+	}
+
+}

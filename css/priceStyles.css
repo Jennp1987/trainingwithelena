@@ -459,6 +459,14 @@ select {
 
  /*TABLET PORTRAIT MEDIA QUERY*/
  @media screen and (min-width:768px)and (max-width:959px) {
+	 .dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: white;
+		width: 22%;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+	}
      .header {
          background-size: cover;
      }
@@ -496,6 +504,14 @@ select {
  /*END TABLET PORTRAIT MEDIA QUERY*/
 
  @media screen and (min-width:480px) and (max-width:767px) {
+	 .dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: white;
+		width: 22%;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+	}
      .button {
          display: none;
      }
